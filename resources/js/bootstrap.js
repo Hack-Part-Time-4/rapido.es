@@ -1,7 +1,6 @@
 import _ from 'lodash';
-import '../css/app.css'
-import * as bootstrap from 'bootstrap'
-import * as logout from './logout'
+import '../css/app.css';
+import * as logout from './logout';
 
 window._ = _;
 

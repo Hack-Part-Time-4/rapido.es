@@ -1,5 +1,5 @@
 @import '~bootstrap/dist/css/bootstrap'; 
-@vite(['resources/css/app.css.']);
+
 
 .otraclase{
     list-style: none;

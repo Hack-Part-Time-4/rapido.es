@@ -19,16 +19,7 @@ class Ad extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function up()
-    {
-        Schema::create('ads', function (Blueprint $table){
-        $table->id();
-        $table->string('title');
-        $table->string('body');
-        $table->decimal('price',8,2);
-        $table->timestamps();
-    });
+   
 }
 
 
-    }

@@ -1,38 +1,13 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@guest
-    @if (Route::has('login'))
-      <li class="nav-item" >
-        <a class="nav-link" 
-          href="{{route('login')}}"> <span>Entrar</span>
-        </a>
-      </li>  
-    @endif
-
-    @if (Route::has('register'))
-      <li class="nav-item" >
-        <a class="nav-link" 
-          href="{{route('register')}}">
-          <span>Registar</span>
-        </a>
-      </li>  
-    @endif
-
-  @else 
-    <li class="nav-item">
-      <form id="LogoutForm" action="{{route('logout')}}"
-        method="POST">
-        @csrf
-      </form>  
-      
-      <a id="logoutBtn" class="nav-link" 
-          href="#">Salir
-      </a>  
-    
-    </li>
-
-@endguest
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -70,3 +45,39 @@
     </div>
   </div>
 </nav>
+  </body>
+</html>
+
+
+@guest
+    @if (Route::has('login'))
+      <li class="nav-item" >
+        <a class="nav-link" 
+          href="{{route('login')}}"> <span>Entrar</span>
+        </a>
+      </li>  
+    @endif
+
+    @if (Route::has('register'))
+      <li class="nav-item" >
+        <a class="nav-link" 
+          href="{{route('register')}}">
+          <span>Registar</span>
+        </a>
+      </li>  
+    @endif
+
+  @else 
+    <li class="nav-item">
+      <form id="LogoutForm" action="{{route('logout')}}"
+        method="POST">
+        @csrf
+      </form>  
+      
+      <a id="logoutBtn" class="nav-link" 
+          href="#">Salir
+      </a>  
+    
+    </li>
+
+@endguest

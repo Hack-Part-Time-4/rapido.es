@@ -15,7 +15,7 @@
                     <!-- <p>Ut possimus qui ut temporibus culpa velit autem.</p> -->
 
                 </div>
-                @if ($erros->any())
+                @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)

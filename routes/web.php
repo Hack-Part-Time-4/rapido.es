@@ -12,12 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home', function () {
-    return view('home');
-});
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name ('inicio');
 
 Route::get('/ads/create', [AdController::class,'create'])->name('ads.create');

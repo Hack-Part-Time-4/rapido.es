@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 
+
 class CreateAd extends Component
 {   
     public $title;
@@ -28,7 +29,7 @@ class CreateAd extends Component
     public function store()
     {
         $category= Category::find($this->category);
-        $ad->ads()->create([
+        $ad= $category->ads()->create([
             'title'=>$this->title,
             'body'=>$this->body,
             'price'=>$this->price,
@@ -38,7 +39,7 @@ class CreateAd extends Component
         session()->flash('message', 'Anuncio Creado con éxito');
         $this->cleanForm();
     }
-    public function update($propertyName){
+    public function updated($propertyName){
         $this->validateOnly($propertyName);
     }
     public function cleanForm(){

@@ -16,25 +16,18 @@
                       href="">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#"> Quienes somos</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                              <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
+                      <a class="nav-link" href="#"> Quiénes somos</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
+                    <a class="nav-link" href="#"> Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> ¡Sube tu anuncio!</a>
+                </li>
+                  
               </ul>
               <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -46,7 +39,7 @@
       @guest
       @if (Route::has('login'))
       <li class="nav-item otraclase">
-          <a class="nav-link" href="{{route('login')}}"> <span>Entrar</span>
+          <a class="nav-link" href="{{route('login')}}"> <span> Entrar </span>
           </a>
       </li>
       @endif
@@ -54,18 +47,18 @@
       @if (Route::has('register'))
       <li class="nav-item otraclase">
           <a class="nav-link" href="{{route('register')}}">
-              <span>Registrar</span>
+              <span> Registrar </span>
           </a>
       </li>
       @endif
 
       @else
       <li class="nav-item">
-          <form id="LogoutForm" action="{{route('logout')}}" method="POST">
+          <form id="logoutForm" action="{{route('logout')}}" method="POST">
               @csrf
           </form>
 
-          <a id="logoutBtn" class="nav-link" href="#">Salir
+          <a id="logoutBtn" class="nav-link" href="#"> Salir
           </a>
 
       </li>

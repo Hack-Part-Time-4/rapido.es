@@ -3,7 +3,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
           <a class="navbar-brand" 
-          href="">Rapido.es</a>
+          href="{{route ('inicio')}}">Rapido.es</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -13,7 +13,7 @@
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                       <a class="nav-link active" aria-current="page" 
-                      href="">Home</a>
+                      href="{{route ('inicio')}}">Home</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#"> Quiénes somos</a>
@@ -25,7 +25,7 @@
                     <a class="nav-link" href="#"> Categorias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> ¡Sube tu anuncio!</a>
+                    <a class="nav-link" href="{{route ('ads.create')}}"> ¡Sube tu anuncio!</a>
                 </li>
                   
               </ul>

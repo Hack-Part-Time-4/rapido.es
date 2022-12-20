@@ -5,7 +5,7 @@
             <div class="col-12">
                 <h1>Anuncios por categoría: {{$category->name}}</h1>
 
-                {{$ads->links()}}
+            {{$ads->links()}}
 
             </div>
         </div>

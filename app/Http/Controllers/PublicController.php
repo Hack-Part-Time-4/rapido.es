@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Controllers\Ad;
-use App\Models\Category;
+use App\Models\Ad;
 use Illuminate\Http\Request;
+use App\Models\Category;
+
 
 
 class PublicController extends Controller
@@ -11,7 +12,7 @@ class PublicController extends Controller
     //
     public function index()
     {
-        $ads= Ad::orderBy('created_ad', 'desc')->take(6)->get(); //sort in db
+        $ads= Ad::orderBy('created_at', 'desc')->take(6)->get(); //sort in db
         return view('welcome',compact('ads'));
     }
 

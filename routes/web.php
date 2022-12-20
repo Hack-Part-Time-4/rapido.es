@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Ad;
+// use App\Http\Controllers\Ad;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdController;
 use App\Http\Controllers\PublicController;
@@ -15,10 +15,6 @@ use App\Http\Controllers\PublicController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-})->name ('inicio');
 
 Route::get('/ads/create', [AdController::class,'create'])->name('ads.create');
 Route::get('/', [PublicController::class,'index'])->name('inicio');

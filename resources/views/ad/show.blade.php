@@ -5,8 +5,8 @@
                 <div id="adImages" class="carousel slide" date-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#adImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#adImages" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#adImages" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#adImages" data-bs-slide-to="1"   aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#adImages" data-bs-slide-to="2"  aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -30,10 +30,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <div><b> Título</b> {{$ad->title}}</div>
-                <div><b> Precio</b> {{$ad->price}}</div>
-                <div><b> Descripción</b> {{$ad->body}}</div>
-                <div><b> Publicado el:</b> {{$ad->create_at->format('d/m/Y')}}</div>
+                <div><b> Título:</b> {{$ad->title}}</div>
+                <div><b> Precio:</b> {{$ad->price}}</div>
+                <div><b> Descripción:</b> {{$ad->body}}</div>
+                <div><b> Publicado el:</b> {{$ad->created_at->format('d/m/Y')}}</div>
                 <div><b> Por:</b> {{$ad->user->name}}</div>
                 <div><a href="{{route('category.ads', $ad->category)}}">#{{$ad->category->name}}</a></div>
                 <div><a href="#" class="btn btn-success">Comprar</a></div>

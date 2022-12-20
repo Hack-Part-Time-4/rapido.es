@@ -13,10 +13,10 @@
                             <img src="https://picsum.photos/700/600?a" class="b-block w-100" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://picsum.photos/700/600?a" class="b-block w-100" alt="">
+                            <img src="https://picsum.photos/700/600?b" class="b-block w-100" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://picsum.photos/700/600?a" class="b-block w-100" alt="">
+                            <img src="https://picsum.photos/700/600?c" class="b-block w-100" alt="">
                         </div>
                     </div>
                     <button type="carousel-control-prev" type="button" data-bs-target="#adImages" data-bs-slide="prev">

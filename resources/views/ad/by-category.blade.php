@@ -1,9 +1,9 @@
 <x-layout>
-    <x-slot name='title'>Rapido - Homepage</x-slot>
+    <x-slot name='title'>Rapido - {{$category->name}} ads</x-slot>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Bienvenido a Rapido.es</h1>
+                <h1>Anuncios por categoría:{{$category->name}}</h1>
             </div>
         </div>
         <div class="row">
@@ -16,7 +16,7 @@
                         <h6 class="card-subtitle mb-2 text-muted">{{$ad->price}}</h6>
                         <p class="card-text">{{ad->body}}</p>
                         <div class="card-subtitle mb-2">
-                            <strong><a href=">{{route('category.ads',$ad->category)}}">#{{$ad->category->name}}</a></strong>
+                            <strong><a href=">{{route('category.ads',$ad->category)}}">#{{$category->name}}</a></strong>
                             <i>{{$ad->created_at->format('d/m/Y')}}</i>
                         </div>
                         <div class="card-subtitle mb-2">
@@ -28,7 +28,7 @@
             </div>
             @empty
             <div class="col-12">
-                <h2>Uy.. parece que no hay nada</h2>
+                <h2>Uy.. parece que no hay nada de esta categoría</h2>
                 <a href="{{route('ads.create')}}" class="btn btn-success">Vende tu primer objeto</a> o <a href="{{route('inicio')}}" class="btn btn-primary">Volver al inicio</a>
             </div>
             @endforelse

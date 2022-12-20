@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Ad;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdController;
 use App\Http\Controllers\PublicController;
@@ -21,5 +22,11 @@ Route::get('/', function () {
 
 Route::get('/ads/create', [AdController::class,'create'])->name('ads.create');
 Route::get('/', [PublicController::class,'index'])->name('inicio');
+Route::get('/category/{category:name}/ads', [PublicController::class,'adsByCategory'])->name('category.ads');
+Route::get('/ads/{ad}', [AdController::class,'show'])->name('ads.show');
 
+// Route::get('/revisor',[RevisorController::class,'index'] )->name('revisor.home');
+
+// Route::patch('/revisor/ad/{ad}/accept',[RevisorController::class,'acceptAd'])->name('revisor.ad.accept');
+// Route::patch('/revisor/ad/{ad}/reject',[RevisorController::class,'rejectAd'])->name('revisor.ad.reject');
 

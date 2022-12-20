@@ -38,6 +38,7 @@ class CreateAd extends Component
         
         session()->flash('message', 'Anuncio Creado con éxito');
         $this->cleanForm();
+        return redirect()->to('/');
     }
     public function updated($propertyName){
         $this->validateOnly($propertyName);

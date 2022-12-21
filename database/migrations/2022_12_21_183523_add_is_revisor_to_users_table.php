@@ -13,8 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('ads', function (Blueprint $table) {
-            $table->boolean('is_accepted')->nullable();
+        Schema::table('users', function (Blueprint $table) {
+            $table->boolean('is_revisor')->default(false);
         });
     }
 
@@ -25,9 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('ads', function (Blueprint $table) {
-            $table->dropColumn('is_accepted');
-
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('is_revisor');
         });
     }
 };

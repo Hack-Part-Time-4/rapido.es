@@ -1,7 +1,6 @@
-
-{{-- <x-layout>
+<x-layout>
     <x-slot name='title'>Rapido - Revisor Home</x-slot>
-    
+    @if ($ad)
     <div class='container my-5 py-5'>
         <div class='row'>
             <div class='col-12 col-md-8 offset-md-2'>
@@ -15,7 +14,8 @@
                                 <b>Usuario</b>
                             </div>
                             <div class="col-md-9">
-                                #{{$ad->user->id}} - {{$ad->user->name}} - {{$ad->user->email}}
+                                #{{$ad->user->id}} - {{$ad->user->name}} -
+                                 {{$ad->user->email}}
                             </div>
                         </div>
                         <hr>
@@ -84,4 +84,7 @@
             </div>
         </div>
     </div>
-</x-layout> --}}
+    @else
+    <h3 class="text-center"> No hay anuncios para revisar, vuelve más tarde, gracias.</h3>
+    @endif
+</x-layout>

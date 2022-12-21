@@ -27,7 +27,6 @@ return new class extends Migration
     {
         Schema::table('ads', function (Blueprint $table) {
             $table->dropColumn('is_accepted');
-
         });
     }
 };

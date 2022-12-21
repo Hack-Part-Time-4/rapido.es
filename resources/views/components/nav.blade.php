@@ -22,26 +22,13 @@
                     <a class="nav-link" href="#"> Ubicación</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                        {{Auth::user()->name}}
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                        @if (Auth::user()->is_revisor)
-                        <li>
-                        <a class="dropdown-item" href="{{ route('revisor.home') }}">
-                            Revisor
-                            <span class="badge rounded-pill bg-danger">
-                            21
-                            </span>
-                        </a>
-                        </li>
-                        @endif
-
                         @foreach ($categories as $category)
                           <li><a class="dropdown-item" href="{{route('category.ads',$category)}}">{{$category->name}}</a></li>  
                         @endforeach
                     </ul>
+
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route ('ads.create')}}"> ¡Sube tu anuncio!</a>
@@ -52,6 +39,31 @@
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      {{Auth::user()->name}}
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      @if (Auth::user()->is_revisor)
+      <li>
+        <a class="dropdown-item" href="{{ route('revisor.home') }}">
+          Revisor
+          <span class="badge rounded-pill bg-danger">
+            21
+          </span>
+        </a>
+      </li>
+      @endif
+      <li>
+        <form id="logoutForm" action="{{route('logout')}}" method="POST">
+          @csrf
+        </form>
+        <a id="logoutBtn" class="dropdown-item" href="#">Salir</a>
+      </li>
+    </ul>
+  </li>
               
           </div>
       </div>

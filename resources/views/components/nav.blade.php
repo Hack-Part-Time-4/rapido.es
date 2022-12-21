@@ -22,7 +22,7 @@
                     <a class="nav-link" href="#"> Ubicación</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> </a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         @foreach ($categories as $category)
                           <li><a class="dropdown-item" href="{{route('category.ads',$category)}}">{{$category->name}}</a></li>  
@@ -38,10 +38,28 @@
               <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+              </form>              
+          </div>
+      </div>
 
+      @guest
+      @if (Route::has('login'))
+      <li class="nav-item otraclase">
+          <a class="nav-link" href="{{route('login')}}"> <span> Entrar </span>
+          </a>
+      </li>
+      @endif
 
-<li class="nav-item dropdown">
+      @if (Route::has('register'))
+      <li class="nav-item otraclase">
+          <a class="nav-link" href="{{route('register')}}">
+              <span> Registrar </span>
+          </a>
+      </li>
+      @endif
+
+      @else
+      <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       {{Auth::user()->name}}
     </a>
@@ -64,36 +82,5 @@
       </li>
     </ul>
   </li>
-              
-          </div>
-      </div>
-
-      @guest
-      @if (Route::has('login'))
-      <li class="nav-item otraclase">
-          <a class="nav-link" href="{{route('login')}}"> <span> Entrar </span>
-          </a>
-      </li>
-      @endif
-
-      @if (Route::has('register'))
-      <li class="nav-item otraclase">
-          <a class="nav-link" href="{{route('register')}}">
-              <span> Registrar </span>
-          </a>
-      </li>
-      @endif
-
-      @else
-      <li class="nav-item">
-          <form id="logoutForm" action="{{route('logout')}}" method="POST">
-              @csrf
-          </form>
-
-          <a id="logoutBtn" class="nav-link" href="#"> Salir
-          </a>
-
-      </li>
-
-      @endguest
+     @endguest
   </nav>

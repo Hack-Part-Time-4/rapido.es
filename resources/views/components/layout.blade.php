@@ -15,7 +15,7 @@
     @if (session()->has('message'))
     <x-alert :type="session('message')['type']" :message="session('message')['text']"/>
     @endif
-
+    
     {{$slot}}
 
     <x-footer />

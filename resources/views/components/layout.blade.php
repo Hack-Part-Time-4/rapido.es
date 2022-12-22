@@ -12,8 +12,8 @@
 </head>
 <body>
     <x-nav />
-    @if (session)->has('message'))
-    <x-alert: type="session('message')['type']" :message="session('message')['text']"/>
+    @if (session()->has('message'))
+    <x-alert type="session('message')['type']" :message="session('message')['text']"/>
     @endif
 
     {{$slot}}
@@ -22,7 +22,7 @@
     @livewireScripts
 
     @vite(['resources/js/app.js'])
-    
+
     {{$script ?? ''}}    
 
 </body>

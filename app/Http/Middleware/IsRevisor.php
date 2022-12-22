@@ -24,11 +24,7 @@ class IsRevisor
             'Acceso denegado, no eres un revisor, pregunta al administrador.']);
         }
 
-        public function becomeRevisor()
-        {
-            Mail::to('admin@rapido.es')->send(new BecomeRevisor(Auth::user())):
-            return redirect()->route('home')->withMessage(['type'=>'success','text'=>'Solicitud enviada con éxito'])
-        };
+        
         
     }
 }

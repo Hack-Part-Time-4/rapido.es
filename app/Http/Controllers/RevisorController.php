@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Ad;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 
 class RevisorController extends Controller
 {
-    public function__construct()
+    public function __construct()
     {
         $this->middleware('isRevisor');
     }

@@ -69,7 +69,7 @@
         <a class="dropdown-item" href="{{ route('revisor.home') }}">
           Revisor
           <span class="badge rounded-pill bg-danger">
-            21
+            {{\App\Models\Ad::ToBeRevisionedCount()}}
           </span>
         </a>
       </li>

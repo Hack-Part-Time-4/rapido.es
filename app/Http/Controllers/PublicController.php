@@ -22,7 +22,7 @@ class PublicController extends Controller
     }
     public function becomeRevisor()
         {
-            Mail::to('admin@rapido.es')->send(new BecomeRevisor(Auth::user())):
+            Mail::to('admin@rapido.es')->send(new BecomeRevisor(Auth::user()));
             return redirect()->route('home')->withMessage(['type'=>'success','text'=>'Solicitud enviada con éxito'])
         };
 }

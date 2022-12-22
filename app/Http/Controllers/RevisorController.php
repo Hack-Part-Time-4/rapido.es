@@ -15,11 +15,6 @@ class RevisorController extends Controller
 
     public function index()
     {
-        dd("Solo para revisores");
-    }
-
-    public function index()
-    {
         $ad = Ad::where('is_accepted',null)
                         ->orderBy('created_at','desc')
                         ->first();

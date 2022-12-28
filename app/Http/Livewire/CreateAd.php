@@ -5,6 +5,7 @@ use App\Models\Ad;
 use Livewire\Component;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 
 class CreateAd extends Component
@@ -35,10 +36,15 @@ class CreateAd extends Component
             'price'=>$this->price,
         ]);
         Auth::user()->ads()->save($ad);
-        
-        session()->flash('message', 'Anuncio Creado con éxito');
+
         $this->cleanForm();
-        return redirect()->to('/');
+        // añadimos el mensaje de sesión, pero ponemos createAd en lugar de message, así continuamos utilizando el layout de alert
+        session()->flash('createAd', [
+            'type'=>'success',
+            'text'=>'nuevo anuncio añadido',
+        ]);
+        // hacemos un redirect a inicio, en el cual tenemos un alert esperando la sesión createAd
+        return redirect()->route('inicio');
     }
     public function updated($propertyName){
         $this->validateOnly($propertyName);

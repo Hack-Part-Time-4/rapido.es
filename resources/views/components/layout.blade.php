@@ -12,8 +12,14 @@
 </head>
 <body>
     <x-nav />
+
+    <!-- session message to accept & reject ads -->
     @if (session()->has('message'))
-    <x-alert :type="session('message')['type']" :message="session('message')['text']"/>
+        <x-alert :type="session('message')['type']" :message="session('message')['text']" />
+    @endif
+    <!-- session message to createAd -->
+    @if (session()->has('createAd'))
+        <x-alert :type="session('createAd')['type']" :message="session('createAd')['text']" />
     @endif
     
     {{$slot}}

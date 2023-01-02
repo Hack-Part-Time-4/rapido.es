@@ -23,6 +23,13 @@ class BecomeRevisor extends Mailable
         $this->user = $user;
     }
 
+    /**
+    * Build the menssage.
+    *
+    * @return $this
+
+    */
+
     public function build()
     {
         return $this->from('rapido.revisor@noreply.es')->view('mail.become-revisor');

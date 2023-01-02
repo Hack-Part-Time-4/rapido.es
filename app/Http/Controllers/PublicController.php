@@ -22,9 +22,5 @@ class PublicController extends Controller
         $ads= $category->ads()->where('is_accepted', true)->latest()->paginate(6);
         return view('ad.by-category',compact('category','ads'));
     }
-    public function becomeRevisor()
-        {
-            Mail::to('admin@rapido.es')->send(new BecomeRevisor(Auth::user()));
-            return redirect()->route('home')->withMessage(['type'=>'success','text'=>'Solicitud enviada con éxito']);
-        }
+    
 }

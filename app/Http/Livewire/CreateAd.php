@@ -6,15 +6,18 @@ use Livewire\Component;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-
+use Livewire\WithFileUploads;
 
 class CreateAd extends Component
 {   
+    use WithFileUploads;
     public $title;
     public $body;
     public $price;
     public $category;
-
+    public $images=[];
+    public $temporary_images;
+    public $image;
     protected $rules= [
         'title'=>'required|min:4',
         'body'=>'required|min:8',

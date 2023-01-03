@@ -23,9 +23,7 @@
             {{$message}}
             @enderror
         </div>
-        <div class="mb-3">
-            <button type="submit" class="btn btn-info">Crear</button>
-    </form>
+          
 
     <div class="mb-3">
         <label for="category" class="form-label">Category:</label>
@@ -36,5 +34,18 @@
             @endforeach
         </select>
     </div>
-    
+
+    <div class="mb-3">
+        <input wire:model="temporary_images" type="file" name="images" multiple class="form-control shadow @error('temporary_images.*') is-invalid @enderror">
+
+        @error('temporary_images.*')
+            <p class="text-danger mt-2"> {{$message}} </p>
+        @enderror
+
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-info">Crear</button>
+        
+    </div>    
+</form>
 </div>

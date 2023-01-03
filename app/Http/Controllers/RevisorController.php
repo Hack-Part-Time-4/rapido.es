@@ -38,14 +38,14 @@ class RevisorController extends Controller
 
     public function becomeRevisor(){
         Mail::to('admin@rapido.es')->send(new BecomeRevisor(Auth::user()));
-        return redirect()-> route('home')->withMessage(['type'=>'success','text' => 'solicitud enviada con éxito, pronto sabrás algo, gracias!']);
+        return redirect()->route('inicio')->withMessage(['type'=>'success','text' => 'solicitud enviada con éxito, pronto sabrás algo, gracias!']);
     
     }
 
     public function makeRevisor(User $user)
     {
         Artisan::call('rapido:makeUserRevisor',['email'=>$user->email]);
-        return redirect()->route('home')->withMessage(['type'=>'successs','text'=>'Ya tenemos un compañero más']);
+        return redirect()->route('inicio')->withMessage(['type'=>'successs','text'=>'Ya tenemos un compañero más']);
     }
 
     

@@ -52,12 +52,12 @@ class BecomeRevisor extends Mailable
      *
      * @return \Illuminate\Mail\Mailables\Content
      */
-    public function content()
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
+    // public function content()
+    // {
+    //     return new Content(
+    //         view: 'view.name',
+    //     );
+    // }
 
     /**
      * Get the attachments for the message.

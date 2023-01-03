@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Mail;
 
 class RevisorController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('isRevisor');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('isRevisor');
+    // }
 
     public function index()
     {

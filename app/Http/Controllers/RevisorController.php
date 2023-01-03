@@ -45,7 +45,7 @@ class RevisorController extends Controller
     public function makeRevisor(User $user)
     {
         Artisan::call('rapido:makeUserRevisor',['email'=>$user->email]);
-        return redirect()->route('inicio')->withMessage(['type'=>'successs','text'=>'Ya tenemos un compañero más']);
+        return redirect()->route('inicio')->withMessage(['type'=>'success','text'=>'Ya tenemos un compañero más']);
     }
 
     

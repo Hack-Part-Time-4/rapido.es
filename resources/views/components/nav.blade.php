@@ -32,63 +32,61 @@
                     <a class="nav-link" href="{{route ('ads.create')}}"> ¡Sube tu anuncio!</a>
                 </li>
                   
-              </ul>
-              <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              </form>              
+              </ul>             
           </div>
       </div>
+              <div class="container-fluid d-flex justify-content-end">
+                @guest
+                @if (Route::has('login'))
+                <li class="nav-item otraclase">
+                    <a class="nav-link me-2" href="{{route('login')}}"> <span> Entrar </span>
+                    </a>
+                </li>
+                @endif
 
-      @guest
-      @if (Route::has('login'))
-      <li class="nav-item otraclase">
-          <a class="nav-link" href="{{route('login')}}"> <span> Entrar </span>
-          </a>
-      </li>
-      @endif
+                @if (Route::has('register'))
+                <li class="nav-item otraclase">
+                    <a class="nav-link me-4" href="{{route('register')}}">
+                        <span> Registrar </span>
+                    </a>
+                </li>
+                @endif
 
-      @if (Route::has('register'))
-      <li class="nav-item otraclase">
-          <a class="nav-link" href="{{route('register')}}">
-              <span> Registrar </span>
-          </a>
-      </li>
-      @endif
+                @else
+                <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{Auth::user()->name}}
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                @if (Auth::user()->is_revisor)
+                <li>
+                  <a class="dropdown-item" href="{{ route('revisor.home') }}">
+                    Revisor
+                    <span class="badge rounded-pill bg-danger">
+                      {{\App\Models\Ad::ToBeRevisionedCount()}}
+                    </span>
+                  </a>
+                </li>
+                @endif
+                <li>
+                  <form id="logoutForm" action="{{route('logout')}}" method="POST">
+                    @csrf
+                  </form>
+                  <a id="logoutBtn" class="dropdown-item" href="#">Salir</a>
+                </li>
+              </ul>
+            </li>
+              @endguest
+              <li class='nav-item me-3'>
+                <x-locale lang="en" country="gb" />
+              </li>
 
-      @else
-      <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      {{Auth::user()->name}}
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-      @if (Auth::user()->is_revisor)
-      <li>
-        <a class="dropdown-item" href="{{ route('revisor.home') }}">
-          Revisor
-          <span class="badge rounded-pill bg-danger">
-            {{\App\Models\Ad::ToBeRevisionedCount()}}
-          </span>
-        </a>
-      </li>
-      @endif
-      <li>
-        <form id="logoutForm" action="{{route('logout')}}" method="POST">
-          @csrf
-        </form>
-        <a id="logoutBtn" class="dropdown-item" href="#">Salir</a>
-      </li>
-    </ul>
-  </li>
-     @endguest
-     <li class='nav-item'>
-      <x-locale lang="en" country="gb" />
-     </li>
+              <li class='nav-item me-3'>
+              <x-locale lang="it" country="it" />
+              </li>
 
-     <li class='nav-item'>
-     <x-locale lang="it" country="it" />
-     </li>
-
-     <li class='nav-item'>
-     <x-locale lang="es" country="es" />
-     </li>
+              <li class='nav-item me-3'>
+              <x-locale lang="es" country="es" />
+              </li>
+        </div>
   </nav>

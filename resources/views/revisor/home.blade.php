@@ -9,6 +9,27 @@
                         Anuncio #{{$ad->id}}
                     </div>
                     <div class="card-body">
+                        
+                        <div class="row">
+                            <div class="col-md-3">
+                                <b>{{__('Imagenes')}}</b>
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    @forelse($ad->images as $image)
+                                    <div class="col-md-4">
+                                        <img src="{{Storage::url($image->path)}}" class="img-fluid" alt="...">
+                                    </div>
+                                    @empty
+                                    <div class="col-12">
+                                        <b>{{__('No hay imagenes')}}</b>
+                                    </div>
+                                    @endforelse
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        
                         <div class="row">
                             <div class="col-md-3">
                                 <b>Usuario</b>

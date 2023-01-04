@@ -14,11 +14,7 @@ class Ad extends Model
     protected $fillable = ['title','body','price'];
     use HasFactory;
 
-    public function images(){
-        return $this->hasMany(Image::class);
-    }
-
-    public function category()
+        public function category()
     {
         return $this->belongsTo(Category::class);
     }
@@ -39,6 +35,11 @@ class Ad extends Model
     {
         return Ad::where('is_accepted', null)-> count();
     }
+
+    public function images(){
+        return $this->hasMany(Image::class);
+    }
+    
 }
 
 

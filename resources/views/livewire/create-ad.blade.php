@@ -25,27 +25,44 @@
         </div>
           
 
-    <div class="mb-3">
-        <label for="category" class="form-label">Category:</label>
-        <select wire:model.defer="category" class="form-control">
-            <option value="">Select Category</option>
-            @foreach ($categories as $category)
-            <option value="{{$category->id}}">{{$category->name}}</option>    
-            @endforeach
-        </select>
-    </div>
+        <div class="mb-3">
+            <label for="category" class="form-label">Category:</label>
+            <select wire:model.defer="category" class="form-control">
+                <option value="">Select Category</option>
+                @foreach ($categories as $category)
+                <option value="{{$category->id}}">{{$category->name}}</option>    
+                @endforeach
+            </select>
+        </div>
 
-    <div class="mb-3">
-        <input wire:model="temporary_images" type="file" name="images" multiple class="form-control shadow @error('temporary_images.*') is-invalid @enderror">
+        <div class="mb-3">
+            <input wire:model="temporary_images" type="file" name="images" multiple class="form-control shadow @error('temporary_images.*') is-invalid @enderror">
+            @error('temporary_images.*')
+                <p class="text-danger mt-2"> {{$message}} </p>
+            @enderror
+        </div>
 
-        @error('temporary_images.*')
-            <p class="text-danger mt-2"> {{$message}} </p>
-        @enderror
+        @if(!empty($images))
+        <div class="row">
+            <div class="col-12">
 
-    </div>
-    <div class="mb-3">
-        <button type="submit" class="btn btn-info">Crear</button>
-        
-    </div>    
-</form>
+                <p>{{__('Vista previa')}}:</p>
+                
+                <div class="row">
+                    @foreach ($images as $key=>$image)
+                    <div class="col-12 col-md-4">
+                        <img src="{{$image->temporaryUrl()}}" alt="" class="img-fluid">
+                        <button type="button" class="btn btn-danger" wire:click="removeImage 
+                        ({{$key}})">ELiminar</button>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+        @endif
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-info">Crear</button>        
+        </div>    
+    </form>
 </div>

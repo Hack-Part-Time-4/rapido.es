@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\App;
+//use Illuminate\Support\Facades\App;
 
 class PublicController extends Controller
 {

@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\App;
 
 class PublicController extends Controller
 {
@@ -22,5 +23,10 @@ class PublicController extends Controller
         $ads= $category->ads()->where('is_accepted', true)->latest()->paginate(6);
         return view('ad.by-category',compact('category','ads'));
     }
-    
+
+    public function setLocale($locale)
+    {
+        session()->put('locale', $locale);
+        return redirect()->back();
+    }
 }

@@ -2,6 +2,7 @@
 
 // use App\Http\Controllers\Ad;
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\App;
 use App\Http\Controllers\AdController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\RevisorController;
@@ -35,3 +36,4 @@ Route::get('/revisor/become', [RevisorController::class,'becomeRevisor'])->middl
 
 Route::get('/revisor/{user}/make',[RevisorController::class,'makeRevisor'])->middleware('auth') ->name('revisor.make');
 
+Route::post('/locale/{locale}', [PublicController::class,'setLocale'])->name('locale.set');

@@ -81,4 +81,15 @@
     </ul>
   </li>
      @endguest
+     <li class='nav-item'>
+      <x-locale lang="en" country="gb" />
+     </li>
+
+     <li class='nav-item'>
+     <x-locale lang="it" country="it" />
+     </li>
+
+     <li class='nav-item'>
+     <x-locale lang="es" country="es" />
+     </li>
   </nav>

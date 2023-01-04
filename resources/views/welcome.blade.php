@@ -1,10 +1,10 @@
 <x-layout>
-    <x-slot name='title'>Rapido - Homepage</x-slot>
+    <x-slot name='title'>Rápido - Homepage</x-slot>
     
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Bienvenido a Rapido.es</h1>
+                <h1>{{__('Bienvenido a rapido.es')}}</h1>
             </div>
         </div>
         <div class="row">

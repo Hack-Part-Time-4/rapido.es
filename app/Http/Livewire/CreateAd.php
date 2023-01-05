@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Livewire;
+
+use App\Jobs\ResizeImage;
 use App\Models\Ad;
 use Livewire\Component;
 use App\Models\Category;
+use Illuminate\Http\File;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Livewire\WithFileUploads;
@@ -62,11 +65,14 @@ class CreateAd extends Component
         $ad=$category->ads()->create($validatedData);
         Auth::user()->ads()->save($ad);
         if (count($this->images)){
+            $newFileName = "ads/$ad->id";
             foreach ($this->images as $image){
-                $ad->images()->create([
-                    'path'=>$image->store("images/$ad->id",'public')
+                $newImage= $ad->images()->create([
+                    'path'=>$image->store($newFileName,'public')
                 ]);
+                dispatch(new ResizeImage ($newImage->path,400,300));
             }
+            File::deleteDirectory (storage_path('/app/livewire-tmp'));
         }
         session()->flash('message','Ad created successfully');
         $this->cleanForm();

@@ -20,7 +20,7 @@
                     <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
                     @endif --}}
 
-                    <img src="{{!$ad->images()->get()->isEmpty() ? Storage::url($ad->images()->first()->path) : 'https://via.placeholder.com/150'}}" class="card-img-top" alt="...">                    
+                    <img src="{{!$ad->images()->get()->isEmpty() ? $ad->images()->first()->getUrl(400,300) : 'https://via.placeholder.com/150'}}" class="card-img-top" alt="...">                    
            
 
                     <img src="//via.placeholder.com/150" class="card-img-top" alt="">

@@ -39,22 +39,22 @@ class CreateAd extends Component
 
     public function store()
     {
-        $category= Category::find($this->category);
-        $ad= $category->ads()->create([
-            'title'=>$this->title,
-            'body'=>$this->body,
-            'price'=>$this->price,
-        ]);
-        Auth::user()->ads()->save($ad);
+        // $category= Category::find($this->category);
+        // $ad= $category->ads()->create([
+        //     'title'=>$this->title,
+        //     'body'=>$this->body,
+        //     'price'=>$this->price,
+        // ]);
+        // Auth::user()->ads()->save($ad);
 
-        $this->cleanForm();
-        // añadimos el mensaje de sesión, pero ponemos createAd en lugar de message, así continuamos utilizando el layout de alert
-        session()->flash('createAd', [
-            'type'=>'success',
-            'text'=>'nuevo anuncio añadido',
-        ]);
-        // hacemos un redirect a inicio, en el cual tenemos un alert esperando la sesión createAd
-        return redirect()->route('inicio');
+        // $this->cleanForm();
+        // // añadimos el mensaje de sesión, pero ponemos createAd en lugar de message, así continuamos utilizando el layout de alert
+        // session()->flash('createAd', [
+        //     'type'=>'success',
+        //     'text'=>'nuevo anuncio añadido',
+        // ]);
+        // // hacemos un redirect a inicio, en el cual tenemos un alert esperando la sesión createAd
+        // return redirect()->route('inicio');
 
 
         $validatedData=$this->validate();

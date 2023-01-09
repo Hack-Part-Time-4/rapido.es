@@ -6,10 +6,11 @@ use App\Jobs\ResizeImage;
 use App\Models\Ad;
 use Livewire\Component;
 use App\Models\Category;
-use Illuminate\Http\File;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Livewire\WithFileUploads;
+use Illuminate\Support\Facades\File;
+
 
 class CreateAd extends Component
 {   
@@ -72,7 +73,7 @@ class CreateAd extends Component
                 ]);
                 dispatch(new ResizeImage ($newImage->path,400,300));
             }
-            File::deleteDirectory (storage_path('/app/livewire-tmp'));
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
         session()->flash('message','Ad created successfully');
         $this->cleanForm();
@@ -88,6 +89,7 @@ class CreateAd extends Component
         $this->body= "";
         $this->category= "";
         $this->price= "";
+        $this->images=[];
     }
 
     public function render()

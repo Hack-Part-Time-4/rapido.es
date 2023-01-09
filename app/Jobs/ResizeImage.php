@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Jobs;
+use Spatie\Image\Image;
 use Illuminate\Bus\Queueable;
 use Spatie\Image\Manipulations;
 use Illuminate\Queue\SerializesModels;

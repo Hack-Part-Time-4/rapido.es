@@ -75,7 +75,12 @@ class CreateAd extends Component
             }
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
-        session()->flash('message','Ad created successfully');
+        session()->flash('createAd', [
+            'type'=>'success',
+            'text'=>'nuevo anuncio añadido',
+        ]);
+        return redirect()->route('inicio');
+        // session()->flash('message','Ad created successfully');
         $this->cleanForm();
 
     }

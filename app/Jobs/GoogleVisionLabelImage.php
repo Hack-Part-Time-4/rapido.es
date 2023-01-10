@@ -2,12 +2,14 @@
 
 namespace App\Jobs;
 
+use App\Models\Image;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldBeUnique;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Queue\SerializesModels;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
+use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
 class GoogleVisionLabelImage implements ShouldQueue
 {
@@ -34,10 +36,10 @@ class GoogleVisionLabelImage implements ShouldQueue
         if(!$i){
             return;
         }
-        $image= file_get_contents(storage_path('/app/public'.$i->path));
+        $image= file_get_contents(storage_path('/app/public/'.$i->path));
         putenv('GOOGLE_APPLICATION_CREDENTIALS='.base_path('google_credentials.json'));
         $imageAnnotator= new ImageAnnotatorClient();
-        $response= $imageAnnotator->labelDetention($image);
+        $response= $imageAnnotator->labelDetection($image);
         $imageAnnotator->close();
         $labels= $response->getLabelAnnotations();
         if($labels){
@@ -48,5 +50,6 @@ class GoogleVisionLabelImage implements ShouldQueue
         }
         $i->labels=$result;
         $i->save();
+        (gettype(Image::find($i->id)->labels));
     }
 }

@@ -9,6 +9,14 @@ use Illuminate\Support\Facades\Storage;
 class Image extends Model
 {
     use HasFactory;
+    protected $casts=[
+        'labels'=>'array'
+    ];
+
+    public function getLabels()
+    {
+        return $this->labels? $this->labels: [];
+    }
 
     protected $fillable=['path'];
 

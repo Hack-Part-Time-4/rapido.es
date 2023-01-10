@@ -25,13 +25,20 @@
                                         Spoof: <i class="bi bi-circle-fill {{$image->spoof}}"></i> [{{$image->spoof}}] <br>
                                         Medical: <i class="bi bi-circle-fill {{$image->medical}}"></i> [{{$image->medical}}] <br>
                                         Violence: <i class="bi bi-circle-fill {{$image->violence}}"></i> [{{$image->violence}}] <br>
-                                        Racy: <i class="bi bi-circle-fill {{$image->racy}}"></i> [{{$image->racy}}] <br>
+                                        Racy: <i class="bi bi-circle-fill {{$image->racy}}"></i> [{{$image->racy}}] <br> <br>
+
+                                        <b>Labels</b><br>
+                                        @foreach($image->getLabels() as $label)
+                                        <a href="#" class="btn btn-info btn-sm m-1"> {{$label}}</a>
+                                        @endforeach
+
+                                        <br> <br>
 
                                         id:{{$image->id}} <br>
                                         path:{{$image->path}} <br>
                                         url:{{Storage:: url($image->path)}} <br>
                                     </div>
-                                    
+
                                     @empty
                                     <div class="col-12">
                                         <b>{{__('No hay imagenes')}}</b>

@@ -66,7 +66,7 @@ class GoogleVisionRemoveFaces implements ShouldQueue
             // cargar la imagen
             $image = SpatieImage::load($srcPath);
             // modificar la imagen con Spotie Image
-            $image->watermark(base_path('resources/images/emoji-glasses.png'))
+            $image->watermark(base_path('resources/images/emilio-modified.png'))
                     ->watermarkPosition('top-left')
                     ->watermarkPadding($bounds[0][0],$bounds[0][1])
                     ->watermarkWidth($w,Manipulations::UNIT_PIXELS)

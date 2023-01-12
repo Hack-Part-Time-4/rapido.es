@@ -21,13 +21,13 @@
                 {{-- EMAIL --}}
                 <div class="space-around my-2">
                     <input type="email" name="email" id="email" class="form-control forms_field-input"
-                    placeholder="Tu correo" date-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    placeholder="{{__('Correo electrónico')}}" date-rule="minlen:4" data-msg="Please enter at least 4 chars">
                     <div class="validate"></div>
                 </div>
                 {{-- Password --}}
                 <div class="space-around my-2">
                     <input type="password" name="password" id="password" class="form-control forms_field-input"
-                    placeholder="Tu contraseña">
+                    placeholder="{{__('Tu contraseña')}}">
                     <div class="validate"></div>
                 </div>
                 {{-- Button Login --}}

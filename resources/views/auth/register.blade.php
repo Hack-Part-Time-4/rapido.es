@@ -50,7 +50,7 @@
                     <!-- Password Confirmation -->
                     <div class="form-field-edit form-field space-around my-2">
                         <input type="password" name="password_confirmation" id="password"
-                        class="form-control forms_field-input" placeholder="Tu contraseña, unas vez más">
+                        class="form-control forms_field-input" placeholder="Tu contraseña, una vez más">
                         <div class="validate"></div>
                     </div>
                     <!-- Button Register -->

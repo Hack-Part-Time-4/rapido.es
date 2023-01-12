@@ -22,7 +22,7 @@ return new class extends Migration
         });
 
         $categories=[
-            'coches','motos','hogar','electronica', 'moviles', 'ordenadores'
+            'Coches','Motos','Hogar','Electrónica', 'Móviles', 'Ordenadores'
         ];
         foreach ($categories as $category){
             Category::create(['name'=>$category]);

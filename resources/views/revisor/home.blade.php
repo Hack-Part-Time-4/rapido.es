@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name='title'>Rapido - Revisor Home</x-slot>
+    <x-slot name='title'>{{__('Rapido - Revisor')}}</x-slot>
     @if ($ad)
     <div class='container my-5 py-5'>
         <div class='row'>
@@ -12,7 +12,7 @@
                         
                         <div class="row">
                             <div class="col-md-3">
-                                <b>{{__('Imagenes')}}</b>
+                                <b>{{__('Imágenes')}}</b>
                             </div>
                             <div class="col-9">
                                 <div class="row">
@@ -41,7 +41,7 @@
 
                                     @empty
                                     <div class="col-12">
-                                        <b>{{__('No hay imagenes')}}</b>
+                                        <b>{{__('No hay imágenes')}}</b>
                                     </div>
                                     @endforelse
                                 </div>
@@ -110,14 +110,14 @@
                         <form action="{{route('revisor.ad.reject',$ad)}}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button type="submit" class="btn btn-danger">Rechazar</button>
+                            <button type="submit" class="btn btn-danger">{{__('Rechazar')}}</button>
                         </form>
                     </div>
                     <div class="col-6 text-end">
                         <form action="{{route('revisor.ad.accept',$ad)}}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button type="submit" class="btn btn-success">Aceptar</button>
+                            <button type="submit" class="btn btn-success">{{__('Aceptar')}}</button>
                         </form>
                     </div>
                 </div>
@@ -125,6 +125,6 @@
         </div>
     </div>
     @else
-    <h3 class="text-center"> No hay anuncios para revisar, vuelve más tarde, gracias.</h3>
+    <h3 class="text-center">{{__('No hay anuncios para revisar, vuelve más tarde, gracias.')}} </h3>
     @endif
 </x-layout>

@@ -12,9 +12,10 @@
     "Vende tu primer objeto": "Sell your first item",
     "o": "or",
     "Vuelve a la home": "Go back to home",
-    "Quienes somos": "About us",
+    "Quiénes somos": "About us",
+    "Ubicación": "Location",
     "Dónde estamos": "Where",
-    "Nuevo Anuncio": "New Ad",
+    "¡Sube tu anuncio!": "New ad!",
     "Entrar": "Login",
     "Registrar": "Register",
     "Salir": "Logout",
@@ -44,5 +45,7 @@
     "Aceptar": "Accept",
     "Desarrollado por": "Powered by",
     "Política de privacidad": "Privacy policy",
-    "Trabaja con nosotros": "Work with us"
+    "Trabaja con nosotros": "Work with us",
+    "Aulab Proyecto Final de Los 4 Fantásticos 2022-2023":"Aulab Final Project by The Fantastic Four 2022-2023"
+    
 }

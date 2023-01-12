@@ -6,7 +6,7 @@
             <div class='col-12 col-md-8 offset-md-2'>
                 <div class="card">
                     <div class="card-header">
-                        Anuncio #{{$ad->id}}
+                        {{__('Anuncio')}} #{{$ad->id}}
                     </div>
                     <div class="card-body">
                         
@@ -27,16 +27,16 @@
                                         Violence: <i class="bi bi-circle-fill {{$image->violence}}"></i> [{{$image->violence}}] <br>
                                         Racy: <i class="bi bi-circle-fill {{$image->racy}}"></i> [{{$image->racy}}] <br> <br>
 
-                                        <b>Labels</b><br>
+                                        <b>{{__('Labels')}}</b><br>
                                         @foreach($image->getLabels() as $label)
                                         <a href="#" class="btn btn-info btn-sm m-1"> {{$label}}</a>
                                         @endforeach
 
                                         <br> <br>
 
-                                        id:{{$image->id}} <br>
-                                        path:{{$image->path}} <br>
-                                        url:{{Storage:: url($image->path)}} <br>
+                                        {{__('id:')}}{{$image->id}} <br>
+                                        {{__('path:')}}{{$image->path}} <br>
+                                        {{__('url:')}}{{Storage:: url($image->path)}} <br>
                                     </div>
 
                                     @empty
@@ -51,7 +51,7 @@
                         
                         <div class="row">
                             <div class="col-md-3">
-                                <b>Usuario</b>
+                                <b>{{__('Usuario')}}</b>
                             </div>
                             <div class="col-md-9">
                                 #{{$ad->user->id}} - {{$ad->user->name}} -
@@ -61,7 +61,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-md-3">
-                                <b>Título</b>
+                                <b>{{__('Título')}}</b>
                             </div>
                             <div class="col-md-9">
                                 {{$ad->title}}
@@ -70,7 +70,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-md-3">
-                                <b>Precio</b>
+                                <b>{{__('Precio')}}</b>
                             </div>
                             <div class="col-md-9">
                                 {{$ad->price}}
@@ -79,7 +79,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-md-3">
-                                <b>Descripción</b>
+                                <b>{{__('Descripción')}}</b>
                             </div>
                             <div class="col-md-9">
                                 {{$ad->body}}
@@ -88,7 +88,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-md-3">
-                                <b>Categoría</b>
+                                <b>{{__('Categoría')}}</b>
                             </div>
                             <div class="col-md-9">
                                 {{$ad->category->name}}
@@ -97,7 +97,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-md-3">
-                                <b>Fecha de creación</b>
+                                <b>{{__('Fecha de creación')}}</b>
                             </div>
                             <div class="col-md-9">
                                 {{$ad->created_at}}

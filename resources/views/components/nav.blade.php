@@ -1,9 +1,4 @@
-  <style>
-     .divWidth {
-        width: 600px;
-     }
-  </style>
-  
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" 
@@ -17,16 +12,16 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" 
-                    href="{{route ('inicio')}}">Home</a>
+                    href="{{route ('inicio')}}">{{__('Home')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Quiénes somos</a>
+                    <a class="nav-link" href="#">{{__('Quiénes somos')}} </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> Ubicación</a>
+                  <a class="nav-link" href="#">{{__('Ubicación')}} </a>
               </li>
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías </a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{__('Categorías')}} </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       @foreach ($categories as $category)
                         <li><a class="dropdown-item" href="{{route('category.ads',$category)}}">{{$category->name}}</a></li>  
@@ -35,14 +30,14 @@
 
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="{{route ('ads.create')}}"> ¡Sube tu anuncio!</a>
+                  <a class="nav-link" href="{{route ('ads.create')}}"> {{__('¡Sube tu anuncio!')}}</a>
               </li>
 
               <div class="container-fluid d-flex justify-content-end divWidth">
               @guest
               @if (Route::has('login'))
               <li class="nav-item otraclase">
-                  <a class="nav-link" href="{{route('login')}}"> <span> Entrar </span>
+                  <a class="nav-link" href="{{route('login')}}"> <span>{{__('Entrar')}} </span>
                   </a>
               </li>
               @endif
@@ -50,7 +45,7 @@
               @if (Route::has('register'))
               <li class="nav-item otraclase">
                   <a class="nav-link" href="{{route('register')}}">
-                      <span> Registrar </span>
+                      <span> {{__('Registrar')}} </span>
                   </a>
               </li>
               @endif
@@ -75,7 +70,7 @@
                 <form id="logoutForm" action="{{route('logout')}}" method="POST">
                   @csrf
                 </form>
-                <a id="logoutBtn" class="dropdown-item" href="#">Salir</a>
+                <a id="logoutBtn" class="dropdown-item" href="#">{{__('Salir')}}</a>
               </li>
             </ul>
           </li>

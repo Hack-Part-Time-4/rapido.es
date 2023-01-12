@@ -1,5 +1,5 @@
 <x-layout>
-<x-slot name="title">Rapido - Register</x-slot>
+<x-slot name="title">{{__('Rapido - Registro')}}</x-slot>
 <!-- ===== REGISTER ===== -->
 <div class="container-fluid bg-accent vh-100">
     <div class="row mb-5 pb-5">
@@ -8,7 +8,7 @@
             <div class="form-content justify-content-center mb-5 pb-5">
                 <!-- FORM TITLE -->
                 <div class="section-title">
-                    <h2 class="form-title space-around">Crear cuenta
+                    <h2 class="form-title space-around">{{__('Crear cuenta')}}
                         <!-- <span> Rapido.es/</span> -->
 
                     </h2>
@@ -55,14 +55,14 @@
                     </div>
                     <!-- Button Register -->
                     <button type="submit" class="form-button-edit text-center space-around my-2">
-                        Crear Cuenta
+                        {{__('Crear Cuenta')}}
                     </button>
                 </form>
             </div>
             <div class="form-link mt-4 d-flex">
-            <p class="text-white">¿Ya eres de los nuestros?</p>
+            <p class="text-white">{{__('¿Ya eres de los nuestros?')}}</p>
             <a class="text-reset text text-decoration-none ps-2" href="{{route('login')}}">
-                <u>¡Entra ya!</u></a>
+                <u>{{__('¡Entra ya!')}}</u></a>
 
             </div>
             </div>

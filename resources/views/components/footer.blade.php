@@ -2,10 +2,9 @@
   <div class="container">
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
-      <a href="{{route('revisor.become')}}" class="btn btn-info"> Work with us </a>
+      <a href="{{route('revisor.become')}}" class="btn btn-info"> {{__('Trabaja con nosotros')}} </a>
 
   </p>
-  <p class="mb-1">Album example is &copy; Bootstrap. but please download and customize it for yourself!</p>
-  <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+  <p class="mb-1">{{__('Aulab Proyecto Final de Los 4 Fantásticos 2022-2023')}}</p>
 </div>
 </footer>

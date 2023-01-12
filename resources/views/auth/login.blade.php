@@ -1,11 +1,11 @@
 <x-layout>
-    <x-slot name='title'>Rapido - Login</x-slot>
+    <x-slot name='title'>{{__('Rapido - Inicia sesión')}}</x-slot>
     {{-- FOrM LOGIN --}}
     <div class="container fluid">
         <div class="row">
             <div class="col-12 col-md-6 offset-md-3">
                 {{-- FORM TITLE --}}
-                <h2 class="form-title space-around">Iniciar sesión</h2>
+                <h2 class="form-title space-around">{{__('Iniciar sesión')}}</h2>
                 @if ($errors->any())
                 <div class="alert alert-danger" >
                     <ul>
@@ -32,11 +32,11 @@
                 </div>
                 {{-- Button Login --}}
                 <button type="submit" class="btn btn-info">
-                    Entrar
+                    {{__('Entrar')}}
                 </button>
                 </form>
 
-                <p class="my-3">¿Aún no eres de los nuestros? <a class="btn btn-info btn-sm ms-2" href="{{route('register')}}">¡Registrate!</a></p>
+                <p class="my-3">{{__('¿Aún no eres de los nuestros?')}} <a class="btn btn-info btn-sm ms-2" href="{{route('register')}}">{{__('¡Registrate!')}}</a></p>
 
             </div>
         </div>

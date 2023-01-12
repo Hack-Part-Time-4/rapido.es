@@ -24,14 +24,14 @@
                         <div class="card-subtitle mb-2">
                             <small>{{ $ad->user->name}}</small>
                         </div>
-                        <a href="{{route("ads.show", $ad)}}" class="btn btn-primary">Mostar Más</a>
+                        <a href="{{route("ads.show", $ad)}}" class="btn btn-primary">{{__('Mostrar más')}}</a>
                     </div>
                 </div>
             </div>
             @empty
             <div class="col-12">
-                <h2>Uy.. parece que no hay nada</h2>
-                <a href="{{route('ads.create')}}" class="btn btn-success">Vende tu primer objeto</a> o <a href="{{route('inicio')}}" class="btn btn-primary">Volver al inicio</a>
+                <h2>{{__('Uy.. parece que no hay nada')}}</h2>
+                <a href="{{route('ads.create')}}" class="btn btn-success">{{__('Vende tu primer objeto')}}</a> o <a href="{{route('inicio')}}" class="btn btn-primary">{{__('Volver al inicio')}}</a>
             </div>
             @endforelse
         </div>

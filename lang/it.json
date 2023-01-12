@@ -20,11 +20,11 @@
     "Vende tu primer objeto" : "Vendi il tuo primo articolo",
     "o" : "o",
     "Vuelve a la home" : "Torna alla homepage",
-    "Quienes somos" : "Su di noi",
-    "Dónde estamos" : "Dove siamo",
-    "Nuevo Anuncio" : "Nuovo Articolo",
+    "Quiénes somos" : "Su di noi",
+    "Ubicación" : "Dove siamo",
+    "¡Sube tu anuncio!" : "Nuovo Articolo",
     "Entrar" : "Login",
-    "Registrarse" : "Registrati",
+    "Registrar" : "Registrati",
     "Salir" : "Esci",
     "Nuevo anuncio" : "Nuovo articolo",
     "Revisor" : "Amministratore",
@@ -43,7 +43,6 @@
     "¿Aún no eres de los nuestros?" : "Non sei ancora uno di noi?",
     "¡Registrate!" : "Registrati!",
     "¿Ya eres de los nuestros?" : "Sei uno di noi?",
-    "¡Entra ya!" : "Login",
     "Usuario" : "Profilo",
     "Anuncio" : "Annuncio",
     "Rechazar" : "Rifiuta",
@@ -51,5 +50,6 @@
     "Desarrollado por" : "Sviluppato da",
     "Política de privacidad" : "Politica di Privacy",
     "Trabaja con nosotros" : "Lavora con noi",
-    "Sube Tu Articulo" : "Aggiungi un Articolo"
+    "Sube Tu Articulo" : "Aggiungi un Articolo",
+    "Aulab Proyecto Final de Los 4 Fantásticos 2022-2023":"Aulab Progetto Finale dei Fantastic 4 2022-2023"
 }

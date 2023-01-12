@@ -2,6 +2,12 @@
 @import '~flag-icon-css/css/flag-icons';
 @import '~bootstrap-icons/font/bootstrap-icons';
 
+/* navbar */
+.divWidth {
+    width: 600px;
+ }
+
+ /* colores de anuncios */
 .VERY_UNLIKELY{
     color: greenyellow;
 }
@@ -25,3 +31,4 @@
 .UNKNOWN{
     color: grey;
 }
+

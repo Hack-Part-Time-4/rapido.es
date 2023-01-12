@@ -35,22 +35,22 @@
 
                     <button type="carousel-control-prev" type="button" data-bs-target="#adImages" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span class="visually-hidden">{{__('Anterior')}}</span>
                     </button>
                     <button type="carousel-control-next" type="button" data-bs-target="#adImages" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">{{__('Next')}}</span>
                     </button> 
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <div><b> Título:</b> {{$ad->title}}</div>
-                <div><b> Precio:</b> {{$ad->price}}</div>
-                <div><b> Descripción:</b> {{$ad->body}}</div>
-                <div><b> Publicado el:</b> {{$ad->created_at->format('d/m/Y')}}</div>
-                <div><b> Por:</b> {{$ad->user->name}}</div>
+                <div><b> {{__('Título:')}}</b> {{$ad->title}}</div>
+                <div><b> {{__('Precio:')}}</b> {{$ad->price}}</div>
+                <div><b> {{__('Descripción:')}}</b> {{$ad->body}}</div>
+                <div><b> {{__('Publicado el:')}}</b> {{$ad->created_at->format('d/m/Y')}}</div>
+                <div><b> {{__('Por:')}}</b> {{$ad->user->name}}</div>
                 <div><a href="{{route('category.ads', $ad->category)}}">#{{$ad->category->name}}</a></div>
-                <div><a href="#" class="btn btn-success">Comprar</a></div>
+                <div><a href="#" class="btn btn-success">{{__('Comprar')}}</a></div>
             </div>
         </div>
     </div>

@@ -1,6 +1,4 @@
 
-gsap.to(".titulo", {opacity: 1, duration: 2});
-
 
 const logout = document.getElementById('logoutBtn');
 if (logout) {
@@ -10,14 +8,3 @@ if (logout) {
     });
 }
 
-// Arrow Scroll
-function arrow() {
-    let arrowScroll = document.querySelector('#scroll-top');
-    if (this.scrollY >= 100) {
-        arrowScroll.classList.add('show-scroll');
-    } else {
-        arrowScroll.classList.remove('show-scroll');
-    }
-}
-
-window.addEventListener('scroll',arrow)

@@ -14,8 +14,8 @@
         <div class="row">
         @forelse($ads as $ad)
             <div class="col-12 col-md-4">
-                <div class="card mb-5">
-                    <img src="{{!$ad->images()->get()->isEmpty() ? Storage::url($ad->images()->first()->path) : 'https://via.placeholder.com/150'}}" class="card-img-top" alt="...">                    
+                <div class="card mb-5 text-center">
+                    <img src="{{!$ad->images()->get()->isEmpty() ? Storage::url($ad->images()->first()->path) : 'https://picsum.photos/400/300'}}" class="card-img-top" alt="...">                    
                                         <div class="card-body">
                         <h5 class="card-title"> {{$ad->title}}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{$ad->price}}</h6>
@@ -27,14 +27,14 @@
                         <div class="card-subtitle mb-2">
                             <small>{{ $ad->user->name}}</small>
                         </div>
-                        <a href="{{route("ads.show", $ad)}}" class="btn btn-primary">{{__('Mostrar más')}}</a>
+                        <a href="{{route("ads.show", $ad)}}" class="btn btn-dark">{{__('Mostrar más')}}</a>
                     </div>
                 </div>
             </div>
             @empty
             <div class="col-12">
                 <h2>{{__('Uy.. parece que no hay nada')}}</h2>
-                <a href="{{route('ads.create')}}" class="btn btn-success">{{__('Vende tu primer objeto')}}</a> o <a href="{{route('inicio')}}" class="btn btn-primary">{{__('Volver al inicio')}}</a>
+                <a href="{{route('ads.create')}}" class="btn btn-dark">{{__('Vende tu primer objeto')}}</a> o <a href="{{route('inicio')}}" class="btn btn-dark">{{__('Volver al inicio')}}</a>
             </div>
             @endforelse
         </div>

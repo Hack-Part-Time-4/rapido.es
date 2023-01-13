@@ -62,7 +62,7 @@
         @endif
 
         <div class="mb-3">
-            <button type="submit" class="btn btn-info">{{__('Crear')}}</button>        
+            <button type="submit" class="btn btn-dark">{{__('Crear')}}</button>        
         </div>    
     </form>
 </div>

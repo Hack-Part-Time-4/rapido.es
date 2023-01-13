@@ -8,10 +8,7 @@
         {{-- FONTS --}}
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
 
-    {{-- Arrow --}}
-    <a href="#" class="scrollTop h2" id="scroll-top">
-        <i class="bi bi-arrow-up-square-fill text-dark"></i>
-    </a>
+   
 
     @livewireStyles
     @vite(['resources/css/app.css'])
@@ -19,6 +16,11 @@
 </head>
 <body>
     <x-nav />
+
+     {{-- Arrow --}}
+     <a href="#" class="scrollTop h2" id="scroll-top">
+        <i class="bi bi-arrow-up-square-fill text-dark"></i>
+    </a>
 
     <!-- session message to accept & reject ads -->
     @if (session()->has('message'))
@@ -36,7 +38,8 @@
 
     @vite(['resources/js/app.js'])
 
-    {{$script ?? ''}}    
+    {{$script ?? ''}}   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> 
 
 </body>
 </html>

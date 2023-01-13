@@ -35,14 +35,14 @@
                         <div class="card-subtitle mb-2">
                             <small>{{ $ad->user->name}}</small>
                         </div>
-                        <a href="{{route("ads.show", $ad)}}" class="btn btn-primary">{{__('Mostrar más')}}</a>
+                        <a href="{{route("ads.show", $ad)}}" class="btn btn-dark">{{__('Mostrar más')}}</a>
                     </div>
                 </div>
             </div>
             @empty
             <div class="col-12">
                 <h2>{{__('Uy.. parece que no hay nada de esta categoría')}}</h2>
-                <a href="{{route('ads.create')}}" class="btn btn-success">{{__('Vende tu primer objeto')}}</a> {{__('o')}} <a href="{{route('inicio')}}" class="btn btn-primary">{{__('Volver al inicio')}}</a>
+                <a href="{{route('ads.create')}}" class="btn btn-dark">{{__('Vende tu primer objeto')}}</a> {{__('o')}} <a href="{{route('inicio')}}" class="btn btn-dark">{{__('Volver al inicio')}}</a>
             </div>
             @endforelse
         </div>

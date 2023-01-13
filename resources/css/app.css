@@ -6,12 +6,14 @@
     font-family: 'Rozha One', serif;
 }
 
-/* .titulo{
-    font-size: 70px;
-    opacity: 0;
-    transition: .4s;
+.bg-navbar {
+    background-color: #b1a8a126;
+    box-shadow: rgb(0 0 0 / 22%) 0 0 15px;
+    top:0px;
+    position:sticky;
+    z-index:1000;
     
-} */
+}
 
 .titulo:hover{
     transform: scale(1.1);
@@ -85,11 +87,15 @@ a:hover {
     transition: all 0.5s ease-in;
 } 
 
-.bg-navbar {
-    background-color: #b1a8a126;
-    box-shadow: rgb(0 0 0 / 22%) 0 0 15px;
-}
+
 
 .card{
 box-shadow: rgb(0 0 0 / 15%) 5px 5px 15px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }

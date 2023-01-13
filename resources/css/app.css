@@ -89,3 +89,7 @@ a:hover {
     background-color: #b1a8a126;
     box-shadow: rgb(0 0 0 / 22%) 0 0 15px;
 }
+
+.card{
+box-shadow: rgb(0 0 0 / 15%) 5px 5px 15px;
+}

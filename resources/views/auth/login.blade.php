@@ -31,12 +31,12 @@
                     <div class="validate"></div>
                 </div>
                 {{-- Button Login --}}
-                <button type="submit" class="btn btn-info">
+                <button type="submit" class="btn btn-dark">
                     {{__('Entrar')}}
                 </button>
                 </form>
 
-                <p class="my-3">{{__('¿Aún no eres de los nuestros?')}} <a class="btn btn-info btn-sm ms-2" href="{{route('register')}}">{{__('¡Registrate!')}}</a></p>
+                <p class="my-3">{{__('¿Aún no eres de los nuestros?')}} <a class="btn btn-dark btn-sm ms-2" href="{{route('register')}}">{{__('¡Registrate!')}}</a></p>
 
             </div>
         </div>

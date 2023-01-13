@@ -1,5 +1,7 @@
 <x-layout>
     <x-slot name='title'>{{__('Rapido - Revisor')}}</x-slot>
+        {{-- FONTS --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
     @if ($ad)
     <div class='container my-5 py-5'>
         <div class='row'>

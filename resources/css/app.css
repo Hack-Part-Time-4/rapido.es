@@ -2,6 +2,10 @@
 @import '~flag-icon-css/css/flag-icons';
 @import '~bootstrap-icons/font/bootstrap-icons';
 
+*{
+    font-family: 'Rozha One', serif;
+}
+
 /* navbar */
 .divWidth {
     width: 600px;

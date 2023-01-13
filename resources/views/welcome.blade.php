@@ -3,14 +3,12 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h1>{{__('Bienvenido a Affiliate')}}</h1>
+            <div class="col-12 d-flex justify-content-center">
+                <h1 class="titulo">{{__('Bienvenido a Affiliate')}}</h1>
             </div>
     </div>
 
-    <a href="#" class="scrollTop h2" id="scroll-top">
-        <i class="bi bi-arrow-up-square-fill text-dark"></i>
-    </a>
+  
 
     <div class="container">
         <div class="row">

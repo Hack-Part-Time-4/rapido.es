@@ -1,3 +1,7 @@
+
+gsap.to(".titulo", {opacity: 1, duration: 2});
+
+
 const logout = document.getElementById('logoutBtn');
 if (logout) {
     logout.addEventListener('click', (e) => {

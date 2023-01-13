@@ -6,6 +6,27 @@
     font-family: 'Rozha One', serif;
 }
 
+/* .titulo{
+    font-size: 70px;
+    opacity: 0;
+    transition: .4s;
+    
+} */
+
+.titulo:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+a:hover {
+    background-color: gainsboro;
+  }
+
+.flag-icon:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+
 /* navbar */
 .divWidth {
     width: 600px;

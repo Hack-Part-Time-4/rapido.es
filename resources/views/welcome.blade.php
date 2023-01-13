@@ -7,6 +7,11 @@
                 <h1>{{__('Bienvenido a rapido.es')}}</h1>
             </div>
     </div>
+
+    <a href="#" class="scrollTop h2" id="scroll-top">
+        <i class="bi bi-arrow-up-square-fill text-dark"></i>
+    </a>
+
     <div class="container">
         <div class="row">
         @forelse($ads as $ad)

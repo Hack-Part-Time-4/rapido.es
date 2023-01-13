@@ -31,4 +31,21 @@
 .UNKNOWN{
     color: grey;
 }
+.scrollTop{
+    position: fixed;
+    z-index: 10;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    transition: .4s;
+    visibility: hidden;
+}
+
+.show-scroll{
+    visibility: visible;
+    bottom: 1rem;
+}
 

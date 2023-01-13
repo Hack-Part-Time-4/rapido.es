@@ -1,7 +1,6 @@
 <footer class="text-muted py-5">
   <div class="container">
     <p class="float-end mb-1">
-      <a href="#">Back to top</a>
       <a href="{{route('revisor.become')}}" class="btn btn-info"> {{__('Trabaja con nosotros')}} </a>
 
   </p>

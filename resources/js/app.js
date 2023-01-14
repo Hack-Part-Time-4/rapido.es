@@ -25,7 +25,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
         let div= document.createElement('div');
         div.classList.add('col-12', 'col-md-3', 'mb-3','d-flex', 'justify-content-center');
         div.innerHTML = `
-        <div class="card animada  bg__cards" style="width: 15rem;">
+        <div class="card animada" style="width: 15rem;">
             <div class="card-body">
                 <h5 class="card-title">${el.title}</h5>
                 <p class="card-text">${el.body}</p>
@@ -41,7 +41,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
         let scrollCardsTop = document.documentElement.scrollTop;
         for (let i = 0; i < animated.length; i++) {
             let height = animated[i].offsetTop;
-            if (height - 700 < scrollCardsTop) { 
+            if (height - 1 < scrollCardsTop) { 
                 animated[i].style.opacity = '1';
 
             

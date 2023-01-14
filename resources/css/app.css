@@ -87,11 +87,24 @@ a:hover {
     transition: all 0.5s ease-in;
 } 
 
-
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 .card{
 box-shadow: rgb(0 0 0 / 15%) 5px 5px 15px;
 }
+
+.card-img-top{
+    width: 100%;
+    height: 300px;
+}
+
+.animada{
+    opacity: 0;
+    transition: all 0.5s ease-in;
+} 
 
 .footer {
     position: fixed;

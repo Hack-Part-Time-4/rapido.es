@@ -32,7 +32,7 @@
               <li class="nav-item">
                   <a class="nav-link" href="{{route ('ads.create')}}"> {{__('¡Sube tu anuncio!')}}</a>
               </li>
-
+              
               <div class="container-fluid d-flex justify-content-end divWidth">
               @guest
               @if (Route::has('login'))
@@ -90,7 +90,12 @@
             </ul> 
                    
         </div>
+        
     </div>
+    <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
 </div>
 
  

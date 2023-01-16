@@ -3,16 +3,18 @@
 namespace App\Models;
 
 use App\Models\User;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Nette\Schema\Schema;
+use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Facades\Schema as FacadesSchema;
-use Nette\Schema\Schema;
+use PhpParser\Node\Stmt\Return_;
 
 class Ad extends Model
 {
     protected $fillable = ['title','body','price'];
-    use HasFactory;
+    use HasFactory, Searchable;
 
         public function category()
     {
@@ -38,6 +40,15 @@ class Ad extends Model
 
     public function images(){
         return $this->hasMany(Image::class);
+    }
+    
+    public function tosearchableArray()
+    {
+        Return [
+            'title'=>$this->title,
+            'body'=>$this->body,
+
+        ];
     }
     
 }

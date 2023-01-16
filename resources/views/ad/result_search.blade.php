@@ -3,9 +3,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>{{ __('Anuncios por busqueda:') }} {{ $q }}</h1>
+                <h1>{{ __('Resultado de tu busqueda:') }} {{ $q }}</h1>
 
-                {{ $ads->links() }}
+                
 
             </div>
         </div>
@@ -44,4 +44,5 @@
             @endforelse
         </div>
     </div>
+    {{ $ads->links() }}
 </x-layout>

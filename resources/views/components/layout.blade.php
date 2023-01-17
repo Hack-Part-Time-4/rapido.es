@@ -19,7 +19,7 @@
 
      {{-- Arrow --}}
      <a href="#" class="scrollTop h2" id="scroll-top">
-        <i class="bi bi-arrow-up-square-fill text-dark"></i>
+        <i class="bi bi-arrow-up-square-fill text-secondary"></i>
     </a>
 
     <!-- session message to accept & reject ads -->

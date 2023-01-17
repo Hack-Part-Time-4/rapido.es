@@ -40,4 +40,5 @@ Route::post('/locale/{locale}', [PublicController::class,'setLocale'])->name('lo
 
 // para el buscador
 
-Route::get('/search/',[PublicController::class,'search'])->name('search');
+Route::get('/search', [PublicController::class, 'search'])->name('search');
+

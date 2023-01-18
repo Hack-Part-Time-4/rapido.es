@@ -1,7 +1,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light bg-navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" 
+        <a class="navbar-brand affiliate" 
         href="{{route ('inicio')}}">Affiliate.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -93,8 +93,8 @@
         
     </div>
     <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <input class="form-control me-2" type="search" placeholder="Search " aria-label="Search">
+      <i class="bi bi-search" type="submit"></i>
     </form>
 </div>
 

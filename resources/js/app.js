@@ -1,3 +1,4 @@
+import { random } from 'lodash';
 import './bootstrap';
 
 gsap.to(".titulo", {opacity: 1, duration: 2});
@@ -51,3 +52,11 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     
     window.addEventListener('scroll',showCards);
 })
+
+let colores = document.querySelector('.affiliate');
+
+colores.style.color = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`
+
+function randomColor() {
+    return Math.round(Math.random() * (255 - 0) + 0) 
+}

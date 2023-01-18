@@ -15,6 +15,10 @@
     
 }
 
+.affiliate{
+    color: rgb(red, green, blue);
+}
+
 .titulo:hover{
     transform: scale(1.1);
     transition: .4s;

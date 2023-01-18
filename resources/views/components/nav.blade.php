@@ -91,12 +91,7 @@
                    
         </div>
         
-    </div>
-    <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search " aria-label="Search">
-      <i class="bi bi-search" type="submit"></i>
-    </form>
-</div>
+   
 
  
 </nav>

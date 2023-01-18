@@ -43,7 +43,7 @@
               @endif
           
               @if (Route::has('register'))
-              <li class="nav-item otraclase">
+              <li class="nav-item">
                   <a class="nav-link" href="{{route('register')}}">
                       <span> {{__('Registrar')}} </span>
                   </a>
@@ -66,6 +66,11 @@
                 </a>
               </li>
               @endif
+              <li>
+                <form>
+                <a href="{{route('dashboard')}}">Mi perfil</a>
+                </form>
+              </li>
               <li>
                 <form id="logoutForm" action="{{route('logout')}}" method="POST">
                   @csrf
@@ -93,7 +98,7 @@
         
     </div>
     <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search " aria-label="Search"> 
+      <input class="form-control me-2" type="search" placeholder="{{__('Buscar')}}" aria-label="Search"> 
       <i class="bi bi-search" type="submit"></i>
     </form> 
 </div> 

@@ -24,4 +24,13 @@ class AdController extends Controller
         return view("ad.show", compact('ad'));
     }
 
+    // borrar anuncios
+    public function destroy($id)
+    {
+        $user = Ad::find($id);
+
+        $user->delete();
+        return back();
+    }
+
 }

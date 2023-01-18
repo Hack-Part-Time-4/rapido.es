@@ -6,7 +6,7 @@ use App\Http\Middleware\App;
 use App\Http\Controllers\AdController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\RevisorController;
-
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +42,7 @@ Route::post('/locale/{locale}', [PublicController::class,'setLocale'])->name('lo
 
 Route::get('/search', [PublicController::class, 'search'])->name('search');
 
+// users registrados
+
+Route::get('/dashboard', [UserController::class, 'index'])->name('dashboard');
+Route::delete('ad/{id}', [UserController::class, 'destroy'])->name('ad.destroy');

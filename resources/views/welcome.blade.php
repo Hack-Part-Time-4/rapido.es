@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <h1 class="titulo">{{__('Bienvenidoooo a Affiliate.')}}</h1>
+                <h1 class="titulo">{{__('Bienvenido a Affiliate.')}}</h1>
             </div>
     </div>
 

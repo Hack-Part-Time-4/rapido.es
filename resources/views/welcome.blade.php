@@ -14,7 +14,7 @@
         <div class="row">
         @forelse($ads as $ad)
             <div class="col-12 col-md-4">
-                <div class="card mb-5 text-center" >
+                <div class="card animada mb-5 text-center" >
                     <img src="{{!$ad->images()->get()->isEmpty() ? Storage::url($ad->images()->first()->path) : 'https://picsum.photos/400/300'}}" class="card-img-top" alt="...">                    
                                         <div class="card-body">
                         <h5 class="card-title"> {{$ad->title}}</h5>

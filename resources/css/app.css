@@ -147,6 +147,11 @@ transition: 0.35s ease-in-out;
     transition: all 0.5s ease-in;
 } 
 
+a{
+    text-decoration: none;
+    color: #4B0082;
+}
+
 .footer {
     position: absolute;
     bottom: 0px;

@@ -97,11 +97,13 @@
         </div>
         
     </div>
+
+  <div class= "buscador">
     <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="{{__('Buscar')}}" aria-label="Search"> 
       <i class="bi bi-search" type="submit"></i>
     </form> 
-</div> 
+  </div> 
 
  
 </nav>

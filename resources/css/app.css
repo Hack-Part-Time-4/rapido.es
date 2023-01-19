@@ -6,6 +6,12 @@
     font-family: 'Rozha One', serif;
 }
 
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 .bg-navbar {
     background-color: #b1a8a126;
     box-shadow: rgb(0 0 0 / 22%) 0 0 15px;

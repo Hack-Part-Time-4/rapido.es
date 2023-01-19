@@ -1,3 +1,254 @@
+content {
+    min-height: calc(100vh-50px);
+    padding: 40px 40px 0 40px;
+}
+
+ 
+ createWidth
+ 
+text-center
+ 
+account
+ 
+Tun nombre
+ 
+ <div class="form-link d-flex">
+            <p class="text-dark">{{__('¿Ya eres de los nuestros?')}}</p>
+            <a class="text-reset text text-decoration-none ps-2" href="{{route('login')}}">
+                <u>{{__('¡Entra ya!')}}</u></a>
+
+            </div>
+ 
+d-flex flex-column align-items-center
+ 
+Mi perfil
+ 
+-brand
+ 
+navbar-brand
+ 
+ public function destroy($id)
+    {
+        $user = Ad::find($id);
+
+        $user->delete();
+        return back();
+    }
+
+ 
+use App\Http\Controllers\UserController;
+
+
+ 
+   <x-slot name='title'>Affiliate - Homepage</x-slot>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <h1 class="titulo">{{__('Bienvenido a Affiliate.')}}</h1>
+            </div>
+    </div>
+
+  
+ 
+            @endif
+
+ 
+        @if(Auth::user()->id === $ad->user_id)
+
+ 
+        dd($ads[1]->id);
+
+ 
+->user_id
+ 
+                        ->first();
+
+ 
+<x-layout>
+    <p>hola que tal soy Paco</p>
+</x-layout>
+ 
+
+.nav-login {
+    position: relative;
+}
+ 
+No hay anuncios para revisar, vuelve más tarde.
+ 
+
+body {
+    position: relative;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+ 
+ class="footer"
+ 
+.content {
+    min-height: 100vh;
+}
+
+
+.footer {
+    margin-top: auto;
+}
+
+
+ 
+html, body {
+    position: relative;
+}
+
+footer {
+    position: absolute;
+}
+
+ 
+ class="footer"
+ 
+
+* {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+
+  .footer {
+    height: 20rem;
+  }
+ 
+  .wrapper {
+    min-height: calc(100% - 4rem);
+  }
+ 
+    background-color: #e2e2e2
+
+ 
+body {
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+ 
+ navbar-fixed-bottom hidden-xs
+ 
+ hidden-xs
+ 
+
+body {
+    height: 100%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+ 
+
+body {
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+ 
+.footer-down {
+    width: 100% ;
+}
+
+
+ 
+my-4
+ 
+footer
+ 
+margin-top: 4;
+    margin-top: auto;
+    width: 100%;
+ 
+.footer-down {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    width: 100%;
+}
+
+ 
+      @include('component.footer');
+
+ 
+style="display: flex; flex-wrap: wrap;"
+ 
+style="flex-grow: 1;"
+ 
+ style="display: flex; flex-wrap: wrap"
+ 
+.footer {
+    flex-grow: 1;
+ }
+ 
+No hay imagenes
+ 
+No hay imagenes
+ 
+dispatch(
+ 
+dispatch(
+ 
+dispatch(
+ 
+use App\Jobs\Manipulations;
+
+ 
+use Spatie\Image\Manipulations;
+
+ 
+$job =  new App\Jobs\GoogleVisionRemoveFaces(9)
+
+ 
+App\Jobs\
+ 
+ImageAnnotatorClient
+ 
+Image
+ 
+$job =  new App\Jobs\GoogleVisionRemoveFaces(9)
+
+ 
+$result[]=$label->getDescription();
+ 
+$i->labels=$result;
+        $i->save();
+        (gettype(Image::find($i->id)->labels));
+ 
+                    <img src="//via.placeholder.com/150" class="card-img-top" alt="">
+
+ 
+ {{-- @if ($ad->images()->count() > 0)
+                    <img src="{{Storage::url($ad->images()->first()->path)}}" class="card-img-top" alt="...">
+                    @else
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    @endif --}}
+ 
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+
+ 
+use Illuminate\Http\File;
+
+ 
 use Spatie\Image\Image;
 
  

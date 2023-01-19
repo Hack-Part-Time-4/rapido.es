@@ -15,4 +15,12 @@ class UserController extends Controller
         return view('auth.dashboard',compact('ads'));
     }
 
+    // borrar anuncios
+    public function destroy($id)
+    {
+        $user = Ad::find($id);
+
+        $user->delete();
+        return back();
+    }
 }

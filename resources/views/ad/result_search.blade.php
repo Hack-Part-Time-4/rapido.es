@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name='title'>Rapido - {{ $q }} ads</x-slot>
+    <x-slot name='title'>Affiliate - {{ $q }} ads</x-slot>
     <div class="container">
         <div class="row">
             <div class="col-12">

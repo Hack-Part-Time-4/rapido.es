@@ -1,14 +1,14 @@
 <x-layout>
-<x-slot name="title">{{__('Rapido - Registro')}}</x-slot>
+<x-slot name="title">{{__('Affiliate - Registro')}}</x-slot>
 <!-- ===== REGISTER ===== -->
 <div class="container-fluid bg-accent vh-100">
-    <div class="row mb-5 pb-5">
-        <div class="col-12 col-md-8 ms-5">
+    <div class="row mb-5">
+        <div class="col-12 col-md-8 createWidth">
             <div class="d-flex flex-column align-items-center">
             <div class="form-content justify-content-center mb-5 pb-5">
                 <!-- FORM TITLE -->
-                <div class="section-title">
-                    <h2 class="form-title space-around">{{__('Crear cuenta')}}
+                <div class="section-title mt-3 d-flex justify-content-center">
+                    <h2 class="form-title">{{__('Crea tu cuenta')}}
                         <!-- <span> Rapido.es/</span> -->
 
                     </h2>
@@ -30,40 +30,41 @@
                     <!-- Name -->
                     <div class="form-field-edit form-field space-around my-2">
                         <input type="text" name="name" id="name" class="form-control 
-                        forms_field-input" placeholder="Tun nombre" data-rule="minlen:4" 
+                        forms_field-input" placeholder="{{__('Tu nombre')}}" data-rule="minlen:4" 
                         data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                     <!-- Email -->
                     <div class="form-field-edit form-field space-around my-2">
                         <input type="email" name="email" id="email" class="form-control
-                         forms_field-input" placeholder="Tu correo" data-rule="minlen:4" 
+                         forms_field-input" placeholder="{{__('Tu correo')}}" data-rule="minlen:4" 
                          data-msg="Please enter al least 4 chars">
                          <div class="validate"></div>
                     </div>
                     <!-- Password -->
                     <div class="form-field-edit form-field space-around my-2">
                         <input type="password" name="password" id="password" class
-                        ="form-control forms_field-input" placeholder="Tu contraseña">
+                        ="form-control forms_field-input" placeholder="{{__('Tu contraseña')}}">
                         <div class="validate"></div>
                     </div>
                     <!-- Password Confirmation -->
                     <div class="form-field-edit form-field space-around my-2">
                         <input type="password" name="password_confirmation" id="password"
-                        class="form-control forms_field-input" placeholder="Tu contraseña, una vez más">
+                        class="form-control forms_field-input" placeholder="{{__('Repite tu contraseña')}}">
                         <div class="validate"></div>
                     </div>
                     <!-- Button Register -->
-                    <button type="submit" class="form-button-edit text-center space-around my-2">
-                        {{__('Crear Cuenta')}}
+                    <div class="d-flex justify-content-center">
+                    <button type="submit" class="form-button-edit text-center space-around my-2 btn btn-dark btn-create">
+                        {{__('Crear cuenta')}}
                     </button>
+                    </div>
                 </form>
-            </div>
-            <div class="form-link mt-4 d-flex">
-            <p class="text-white">{{__('¿Ya eres de los nuestros?')}}</p>
-            <a class="text-reset text text-decoration-none ps-2" href="{{route('login')}}">
-                <u>{{__('¡Entra ya!')}}</u></a>
-
+                <div class="form-link d-flex justify-content-center">
+                    <p class="text-dark mt-2">{{__('¿Ya eres de los nuestros?')}}</p>
+                    <a class="text-reset text text-decoration-none ps-2 mt-2" href="{{route('login')}}">
+                        <u>{{__('¡Entra ya!')}}</u></a>
+                </div>
             </div>
             </div>
         </div>

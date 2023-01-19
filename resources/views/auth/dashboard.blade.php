@@ -1,5 +1,12 @@
 <x-layout>
-    <div class="container mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center mt-3">
+                <h1 class="titulo">{{__('Mi perfil')}}</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
         <div class="row">
         @forelse($ads as $ad)
             <div class="col-12 col-md-4">

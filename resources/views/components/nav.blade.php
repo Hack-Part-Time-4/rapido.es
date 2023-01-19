@@ -68,7 +68,7 @@
               @endif
               <li>
                 <form>
-                <a href="{{route('dashboard')}}">Mi perfil</a>
+                <a  class="dropdown-item" href="{{route('dashboard')}}">{{__('Mi perfil')}}</a>
                 </form>
               </li>
               <li>

@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name='title'>{{__('Rapido - Revisor')}}</x-slot>
+    <x-slot name='title'>{{__('Affiliate - Revisor')}}</x-slot>
 
     @if ($ad)
     <div class='container my-5 py-5'>

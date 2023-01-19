@@ -19,8 +19,12 @@
     color: rgb(red, green, blue);
 }
 
+.affiliate:hover {
+    transform: scale(1.1);
+}
+
 .form-control{
-    transform: scale(1.03);
+    
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 15px;
 }
@@ -43,6 +47,14 @@ a:hover {
 /* navbar */
 .divWidth {
     width: 600px;
+ }
+
+ .createWidth {
+    width: 100%;
+ }
+
+ .btn-create:hover {
+    transform: scale(1.05);
  }
 
  /* colores de anuncios */

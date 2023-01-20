@@ -16,15 +16,20 @@
     
 }
 
+.image-modify {
+    height: 700px;
+}
+
+
 .buscador{
     position: relative;
 }
 
-/* .bi{
+.lupa{
     position: absolute;
     right: 20px;
     top: 8px;
-} */
+}
 
 .affiliate{
     color: rgb(red, green, blue);
@@ -147,12 +152,14 @@ a{
     color: #4B0082;
 }
 
-
+.register-view {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .footer {
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    width: 100%;
 }

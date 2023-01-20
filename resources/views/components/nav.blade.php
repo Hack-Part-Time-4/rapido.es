@@ -34,9 +34,15 @@
               </li>
               
               <div class="container-fluid d-flex justify-content-end divWidth">
+                <div class= "buscador">
+                  <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="{{__('Buscar')}}" aria-label="Search"> 
+                    <i class="bi lupa bi-search" type="submit"></i>
+                  </form> 
+                </div> 
               @guest
               @if (Route::has('login'))
-              <li class="nav-item otraclase">
+              <li class="nav-item">
                   <a class="nav-link" href="{{route('login')}}"> <span>{{__('Entrar')}} </span>
                   </a>
               </li>
@@ -98,12 +104,7 @@
         
     </div>
 
-  <div class= "buscador">
-    <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="{{__('Buscar')}}" aria-label="Search"> 
-      <i class="bi bi-search" type="submit"></i>
-    </form> 
-  </div> 
+ 
 
  
 </nav>

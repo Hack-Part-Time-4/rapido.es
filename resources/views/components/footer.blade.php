@@ -1,6 +1,6 @@
 <footer>
   <div class="container-fluid mt-4">
-      <div class="row p-5 bg-dark text-white">
+      <div class="row p-4 bg-dark text-white">
 
           <div class="col-xs-12 col-md-6 col-lg-3">
               <p class="h6">Polices</p>

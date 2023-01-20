@@ -9,7 +9,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse ms-2" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" 
                     href="{{route ('inicio')}}">{{__('Home')}}</a>
@@ -33,7 +33,7 @@
                   <a class="nav-link" href="{{route ('ads.create')}}"> {{__('¡Sube tu anuncio!')}}</a>
               </li>
               
-              <div class="container-fluid d-flex justify-content-end divWidth">
+              <div class="container-fluid d-flex justify-content-end  align-items-center">
                 <div class= "buscador">
                   <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="{{__('Buscar')}}" aria-label="Search"> 

@@ -21,7 +21,7 @@ window.addEventListener('scroll',arrow)
         let scrollCardsTop = document.documentElement.scrollTop;
         for (let i = 0; i < animated.length; i++) {
             let height = animated[i].offsetTop;
-            if (height - 600 < scrollCardsTop) { 
+            if (height - 800 < scrollCardsTop) { 
                 animated[i].style.opacity = '1';
             }
         }

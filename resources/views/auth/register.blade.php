@@ -25,7 +25,7 @@
                 </div>
                 @endif
                 <!-- FORM FIELDS -->
-                <form action="/register" method="POST" role="form" class="php-email-form">
+                <form action="/register" method="POST" role="form" class=" form-control php-email-form loginSide">
                     @csrf
                     <!-- Name -->
                     <div class="form-field-edit form-field space-around my-2">
@@ -55,14 +55,14 @@
                     </div>
                     <!-- Button Register -->
                     <div class="d-flex justify-content-center">
-                    <button type="submit" class="form-button-edit text-center space-around my-2 btn btn-dark btn-create">
+                    <button type="submit" class="form-button-edit text-center space-around my-2 btn btn-secondary btn-create">
                         {{__('Crear cuenta')}}
                     </button>
                     </div>
                 </form>
                 <div class="form-link d-flex justify-content-center">
                     <p class="text-dark mt-2">{{__('¿Ya eres de los nuestros?')}}</p>
-                    <a class="text-reset text text-decoration-none ps-2 mt-2" href="{{route('login')}}">
+                    <a class="text text-decoration-none ps-2 mt-2 entraYa" href="{{route('login')}}">
                         <u>{{__('¡Entra ya!')}}</u></a>
                 </div>
             </div>

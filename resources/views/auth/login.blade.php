@@ -16,7 +16,7 @@
                 </div>
                 @endif
                 {{-- FORM FIELDS --}}
-                <form action="/login" method="POST" role="form" class="form-control">
+                <form action="/login" method="POST" role="form" class="form-control loginSide">
                 @csrf
                 {{-- EMAIL --}}
                 <div class="space-around my-2">
@@ -32,13 +32,13 @@
                 </div>
                 {{-- Button Login --}}
                 <div class="d-flex justify-content-center">
-                <button type="submit" class=" btn btn-dark my-1">
+                <button type="submit" class=" btn btn-secondary my-1">
                     {{__('Entrar')}}
                 </button>
                 </div>
                 </form>
                 <div class="d-flex justify-content-center">
-                    <p class="mt-4">{{__('¿Aún no eres de los nuestros?')}} <a class="btn btn-dark btn-sm ms-2" href="{{route('register')}}">{{__('¡Registrate!')}}</a></p>
+                    <p class="mt-4">{{__('¿Aún no eres de los nuestros?')}} <a class="btn btn-danger btn-sm ms-2" href="{{route('register')}}">{{__('¡Registrate!')}}</a></p>
                 </div>
             </div>
         </div>

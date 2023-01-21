@@ -16,11 +16,6 @@
                           <h5 class="card-title">Iván Calderón</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Cras justo odio</li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
                         <div class="card-body">
                           <a href="#" class="card-link">Card link</a>
                           <a href="#" class="card-link">Another link</a>
@@ -33,11 +28,6 @@
                           <h5 class="card-title">Zalwa Elena Charif</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Cras justo odio</li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
                         <div class="card-body">
                           <a href="#" class="card-link">Card link</a>
                           <a href="#" class="card-link">Another link</a>
@@ -50,11 +40,6 @@
                           <h5 class="card-title">Manuel Noriega</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Cras justo odio</li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
                         <div class="card-body">
                           <a href="#" class="card-link">Card link</a>
                           <a href="#" class="card-link">Another link</a>
@@ -67,11 +52,6 @@
                           <h5 class="card-title">Jeiny Fernández</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Cras justo odio</li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
                         <div class="card-body">
                           <a href="#" class="card-link">Card link</a>
                           <a href="#" class="card-link">Another link</a>

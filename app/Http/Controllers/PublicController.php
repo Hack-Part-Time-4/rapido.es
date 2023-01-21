@@ -12,12 +12,13 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
 
+
 class PublicController extends Controller
 {
     //
     public function index()
     {
-        $ads= Ad::where('is_accepted', true)->orderBy('created_at', 'desc')->take(6)->get(); //sort in db
+        $ads= Ad::where('is_accepted', true)->latest()->take(6)->get(); //sort in db
         return view('welcome',compact('ads'));
     }
 
@@ -41,5 +42,10 @@ class PublicController extends Controller
                 ->where('is_accepted', true)
                 ->paginate();
             return view('ad.result_search', compact('q', 'ads'));    
+    }
+
+    public function aboutUs()
+    {
+        return view('auth.about-us');
     }
 }

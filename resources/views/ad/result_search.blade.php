@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>{{ __('Resultado de tu busqueda:') }} {{ $q }}</h1>
+                <h1 class="mt-4 text-center">{{ __('Resultado de tu búsqueda:') }} {{ $q }}</h1>
 
                 
 
@@ -12,7 +12,7 @@
         <div class="row">
             @forelse($ads as $ad)
                 <div class="col-12 col-md-4">
-                    <div class="card mb-5">
+                    <div class="card researchCard mb-5">
 
                         <img src="{{ !$ad->images()->get()->isEmpty()? $ad->images()->first()->getUrl(400, 300): 'https://picsum.photos/400/300' }}"
                             class="card-img-top" alt="...">

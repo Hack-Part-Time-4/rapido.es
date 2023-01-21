@@ -1,5 +1,5 @@
 {
-    "Bienvenido a Affiliate.": "Benvenuto su Affiliate",
+    "Bienvenido a Affiliate.": "Benvenuto su Affiliate.",
     "Últimos anuncios" : "Ultimi annunci",
     "Eliminar":"Cancellare",
     "Selecciona una Categoría":"Selezionare una categoria",
@@ -68,9 +68,11 @@
     "Aceptar" : "Accetta",
     "Desarrollado por" : "Sviluppato da",
     "Política de privacidad" : "Politica di Privacy",
+    "Sobre nosotros" : "Chi siamo",
     "Trabaja con nosotros" : "Lavora con noi",
     "Sube Tu Articulo" : "Aggiungi un Articolo",
     "No hay anuncios para revisar, vuelve más tarde." : "Non ci sono annunci da controllare, torna più tardi.",
+    "Resultado de tu búsqueda:" : "Risultato della tua ricerca:",
     "Gracias." : "Grazie.",
     "Aulab Proyecto Final de Los 4 Fantásticos 2022-2023":"Aulab Progetto Finale dei Fantastic 4 2022-2023"
 }

@@ -126,7 +126,7 @@
         </div>
     </div>
     @else
-    <div class="vh-100 footer">
+    <div>
         <h3 class="text-center mt-4">{{__('No hay anuncios para revisar, vuelve más tarde.')}} </h3>
         <h4 class="text-center mt-3">{{__('Gracias.')}} </h3>
     </div>

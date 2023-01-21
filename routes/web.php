@@ -23,6 +23,7 @@ Route::get('/ads/create', [AdController::class,'create'])->name('ads.create');
 Route::get('/', [PublicController::class,'index'])->name('inicio');
 Route::get('/category/{category:name}/ads', [PublicController::class,'adsByCategory'])->name('category.ads');
 Route::get('/ads/{ad}', [AdController::class,'show'])->name('ads.show');
+Route::get('/aboutUs', [PublicController::class,'aboutUs'])->name('aboutUs');
 
 
 Route::middleware(['isRevisor'])->group(function(){

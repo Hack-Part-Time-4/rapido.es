@@ -50,14 +50,14 @@
                       </div>
 
                       <div class="card perfiles" style="width: 18rem;">
-                        <img class="card-img-top" src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/06/antorcha-humana-chris-evans.jpg?fit=2500%2C1634&quality=50&strip=all&ssl=1" alt="Card image cap">
+                        <img class="card-img-top" src="{{asset ('/images/jeiny-modified.png')}}" alt="Card image cap">
                         <div class="card-body text-center">
                           <h5 class="card-title">Jeiny Fernández</h5>
                           <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Somewhere in this world.</p></p>
                           <p><b>Alias:</b> La antorcha humana</p>
                         </div>
                         <div class="card-body text-center">
-                          <a href="#" class="card-link"><i class="bi bi-linkedin text-primary"></i></a>
+                          <a href="https://www.linkedin.com/in/enrique-fern%C3%A1ndez-28b255174/" class="card-link"><i class="bi bi-linkedin text-primary"></i></a>
                           <a href="#" class="card-link"><i class="bi bi-envelope-at-fill text-dark"></i></a>
                         </div>
                       </div>

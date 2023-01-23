@@ -3,27 +3,28 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center">
+            {{-- <div class="col-12 d-flex justify-content-center">
                 <h1 class="titulo my-5">{{__('Bienvenido a Affiliate.')}}</h1>
-            </div>
+            </div> --}}
     </div>
 
     <!-- CARRUSEL DE PROMOCIONES -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
+    <div class="container d-flex justify-content-center ">
+    <div id="carouselExampleIndicators " class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-indicators ">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://thumbs.dreamstime.com/b/dise%C3%B1o-de-plantillas-banner-s%C3%BAper-venta-para-promociones-medios-y-promoci%C3%B3n-sociales-fondo-183029584.jpg" class="d-block w-100 image-modify" alt="...">
+      <img src="https://thumbs.dreamstime.com/b/dise%C3%B1o-de-plantillas-banner-s%C3%BAper-venta-para-promociones-medios-y-promoci%C3%B3n-sociales-fondo-183029584.jpg" class="w-100 image-modify" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://cursosgratuitos.grupoeuroformac.com/2065/comm031po-marketing-online-diseno-promocion-sitios-web-comercio.jpg" class="d-block w-100 image-modify" alt="...">
+      <img src="https://cursosgratuitos.grupoeuroformac.com/2065/comm031po-marketing-online-diseno-promocion-sitios-web-comercio.jpg" class="w-100 image-modify" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://thumbs.dreamstime.com/b/vector-del-icono-de-la-promoci%C3%B3n-colecci%C3%B3n-negocio-l-nea-fina-ejemplo-esquema-promoci-n-s-mbolo-linear-para-el-uso-en-web-y-los-142612305.jpg" class="d-block w-100 image-modify" alt="...">
+      <img src="https://thumbs.dreamstime.com/b/vector-del-icono-de-la-promoci%C3%B3n-colecci%C3%B3n-negocio-l-nea-fina-ejemplo-esquema-promoci-n-s-mbolo-linear-para-el-uso-en-web-y-los-142612305.jpg" class="w-100 image-modify" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -35,10 +36,38 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+</div>
 
+<div class="my-5 d-flex justify-content-center text-center">
+  <h2>Compra y vende productos de segunda mano <br>
+     desde dónde sea y cuándo quieras.
+    </h2>
+</div>
 
-  <div class="container my-5">
-    PROBANDO
+{{-- second nav --}}
+  <div class="container my-5 ">
+    <div class="container-fluid d-flex justify-content-center">
+      
+      <div class= "buscador">
+        <form action="{{route('search')}}" method="GET" class="d-flex" role="search">
+          <input class="form-control me-5 inputSearch " type="search" placeholder="{{__('Buscar')}}" aria-label="Search"> 
+          
+          <i class="bi lupa bi-search d-flex align-items-center" type="submit"></i>
+        
+        </form> 
+      </div>
+    
+      
+        <div class="border">
+        <a class="dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{__('Categorías')}} </a>
+       
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            @foreach ($categories as $category)
+              <li><a class="dropdown-item" href="{{route('category.ads',$category)}}">{{__($category->name)}}</a></li>  
+            @endforeach
+        </ul>
+        </div>
+  </div>
   </div>
 
 

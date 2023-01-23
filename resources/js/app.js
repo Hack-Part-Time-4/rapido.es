@@ -30,6 +30,7 @@ window.addEventListener('scroll',arrow)
     window.addEventListener('scroll',showCards);
 
 
+// Título de colores
 let colores = document.querySelector('.affiliate');
 
 colores.style.color = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`

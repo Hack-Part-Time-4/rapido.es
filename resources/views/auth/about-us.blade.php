@@ -17,8 +17,8 @@
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <a href="https://www.linkedin.com/in/iv%C3%A1n-calder%C3%B3n-850751123/" class="card-link"><i class="bi bi-linkedin text-primary"></i></a>
+                          <a href="#" class="card-link"><i class="bi bi-envelope-at-fill text-dark"></i></a>
                         </div>
                       </div>
 
@@ -29,8 +29,8 @@
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <a href="https://www.linkedin.com/in/zalwa-elena-charif-portillo-152647247/" class="card-link"><i class="bi bi-linkedin text-primary"></i></a>
+                          <a href="#" class="card-link"><i class="bi bi-envelope-at-fill text-dark"></i></a>
                         </div>
                       </div>
 
@@ -41,8 +41,8 @@
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <a href="https://www.linkedin.com/in/manuel-r-noriega-a-/" class="card-link"><i class="bi bi-linkedin text-primary"></i></a>
+                          <a href="#" class="card-link"><i class="bi bi-envelope-at-fill text-dark"></i></a>
                         </div>
                       </div>
 
@@ -53,8 +53,8 @@
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
+                          <a href="#" class="card-link"><i class="bi bi-linkedin text-primary"></i></a>
+                          <a href="#" class="card-link"><i class="bi bi-envelope-at-fill text-dark"></i></a>
                         </div>
                       </div>
                 </div>

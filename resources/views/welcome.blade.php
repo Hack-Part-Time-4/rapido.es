@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <h1 class="titulo my-2">{{__('Bienvenido a Affiliate.')}}</h1>
+                <h1 class="titulo my-5">{{__('Bienvenido a Affiliate.')}}</h1>
             </div>
     </div>
 
@@ -37,11 +37,16 @@
 </div>
 
 
+  <div class="container my-5">
+    PROBANDO
+  </div>
+
+
     <!-- CARDS DE ANUNCIOS -->
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <h2 class="titulo mt-4 mb-3">{{__('Últimos anuncios')}}</h2>
+                <h2 class="titulo my-5">{{__('Últimos anuncios')}}</h2>
             </div>
     </div>
     <div class="container">

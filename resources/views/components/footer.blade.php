@@ -1,79 +1,22 @@
-<footer>
-  <div class="container-fluid mt-4">
-      <div class="row p-4 bg-dark text-white">
 
-          <div class="col-xs-12 col-md-6 col-lg-3">
-              <p class="h6">Polices</p>
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Terms and condicions</a>
-              </div>
+    <footer class="mt-auto py-3 bg-dark">
+        <div class="container col-12">
+        <div class=" row d-flex space-around align-items-center">
 
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Privacy Policy</a>
-              </div>
-
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Cookies Policy</a>
-              </div>
-
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Cookies Settings</a>
-              </div>
-          </div>
-
-          <div class="col-xs-12 col-md-6 col-lg-3">
-              <p class="h6">Company</p>
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Press</a>
-              </div>
-
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Afinnity Card</a>
-              </div>
-
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Ticket to Envoice</a>
-              </div>
-          </div>
-
-          <div class="col-xs-12 col-md-6 col-lg-3">
-              <p class="h6">Contact</p>
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Contact Us</a>
-              </div>
-
-               <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Guest Purchase</a>
-              </div>
-
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Stores</a>
-              </div>
-
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">900 000 000</a>
-              </div>
-          </div>
-
-          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="col-md-4 text-center">
             <a href="{{route('revisor.become')}}" class="text-white text-decoration-none"> {{__('Trabaja con nosotros')}} </a>
-              <div class="mb-2">
-                  <a class="text-white text-decoration-none" href="#">Address</a>
-              </div>
+            </div>
 
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">ejemplo@gmail.com</a>
-              </div>
+        <div class="col-md-4 text-center">
+            <span class="text-white">{{__('Proyecto Final de Los 4 Fantásticos 2022-2023')}}</span>
+        </div>
 
-              <div class="mb-2">
-               <a class="text-white text-decoration-none" href="#">Social Media</a>
-              </div>
+        <div class="col-md-4 text-center">
+            <a class="text-white " href="{{route ('aboutUs')}}">{{__('Quiénes somos')}} </a>
+        </div>
 
-              <div class="col-12">
-              <div class="d-flex justify-content-center">
-                <p class="mb-1">{{__('Aulab Proyecto Final de Los 4 Fantásticos 2022-2023')}}</p>
-              </div>
-          </div>
+        </div>
+        </div>
+      </footer>
+
           
-      </div>
-</footer> 

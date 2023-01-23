@@ -14,12 +14,7 @@
                     <a class="nav-link active text-white " aria-current="page" 
                     href="{{route ('inicio')}}">{{__('Home')}}</a>
                 </li>
-                <li class="nav-item linkWidth caja">
-                    <a class="nav-link text-white" href="{{route ('aboutUs')}}">{{__('Quiénes somos')}} </a>
-                </li>
-                <li class="nav-item linkWidth">
-                  <a class="nav-link text-white" href="#">{{__('Ubicación')}} </a>
-              </li>
+                          
               <li class="nav-item dropdown linkWidth">
                   <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{__('Categorías')}} </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

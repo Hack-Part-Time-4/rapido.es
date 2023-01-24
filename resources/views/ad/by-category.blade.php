@@ -32,9 +32,11 @@
                 </div>
             </div>
             @empty
-            <div class="col-12">
+            <div class="container">
+            <div class="col-12 mb-5">
                 <h2>{{__('Uy.. parece que no hay nada de esta categoría')}}</h2>
-                <a href="{{route('ads.create')}}" class="btn btn-dark">{{__('Vende tu primer objeto')}}</a> {{__('o')}} <a href="{{route('inicio')}}" class="btn btn-dark">{{__('Volver al inicio')}}</a>
+                <a href="{{route('ads.create')}}" class="btn btn-dark me-3">{{__('Vende tu primer objeto')}}</a><a href="{{route('inicio')}}" class="btn btn-dark">{{__('Volver al inicio')}}</a>
+            </div>
             </div>
             @endforelse
         </div>

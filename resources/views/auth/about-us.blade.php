@@ -14,7 +14,7 @@
                         <img class="card-img-top" src="{{asset ('/images/Ivan_Sr_Fantastico-modified.png')}}" alt="Card image cap">
                         <div class="card-body text-center">
                           <h5 class="card-title">Iván Calderón</h5>
-                          <p class="card-text"><i class="bi bi-geo-alt-fill"></i> La isla de las tentaciones.</p>
+                          <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Mallorca, Islas Baleares.</p>
                           <p><b>Alias:</b> Sr. Fantástico</p>
                         </div>
                         <div class="card-body text-center">
@@ -53,7 +53,7 @@
                         <img class="card-img-top" src="{{asset ('/images/jeiny-modified.png')}}" alt="Card image cap">
                         <div class="card-body text-center">
                           <h5 class="card-title">Jeiny Fernández</h5>
-                          <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Somewhere in this world.</p></p>
+                          <p class="card-text"><i class="bi bi-geo-alt-fill"></i> Oviedo, Asturias.</p></p>
                           <p><b>Alias:</b> La antorcha humana</p>
                         </div>
                         <div class="card-body text-center">

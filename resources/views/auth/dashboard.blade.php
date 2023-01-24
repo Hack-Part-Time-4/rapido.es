@@ -10,7 +10,7 @@
         <div class="row">
         @forelse($ads as $ad)
             <div class="col-12 col-md-4">
-                <div class="card mb-5 text-center" >
+                <div class="card animada-profile mb-5 text-center" >
                     <img src="{{!$ad->images()->get()->isEmpty() ? Storage::url($ad->images()->first()->path) : 'https://picsum.photos/400/300'}}" class="card-img-top" alt="...">                    
                                         <div class="card-body">
                         <h5 class="card-title"> {{$ad->title}}</h5>
@@ -23,12 +23,12 @@
                         <div class="card-subtitle mb-2">
                             <small>{{ $ad->user->name}}</small>
                         </div>
-                        <a href="{{route("ads.show", $ad)}}" class="btn btn-dark">{{__('Mostrar más')}}</a>
+                        <a href="{{route("ads.show", $ad)}}" class="btn btn-dark letra">{{__('Mostrar más')}}</a>
                         <div>
                             <form class="mt-1" method="POST" action="{{route('ad.destroy', $ad->id)}}">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-danger" type="submit">{{__('Eliminar')}}</button>
+                                <button class="btn btn-danger letra" type="submit">{{__('Eliminar')}}</button>
                             </form>
                         </div>
                     </div>

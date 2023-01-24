@@ -1,5 +1,5 @@
 
-    <footer class="mt-auto py-3 bg-dark">
+    <footer class="mt-auto py-4 bg-dark">
         <div class="container col-12">
         <div class=" row d-flex space-around align-items-center">
 

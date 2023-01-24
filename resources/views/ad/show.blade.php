@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container">
+    <div class="container me-5">
         <div class="row my-5">
             <div class="col-12 col-md-6">
                 <div id="adImages" class="carousel slide" date-bs-ride="true">
@@ -57,17 +57,22 @@
                                 <span class="visually-hidden">{{__('Next')}}</span>
                             </button>
                         </div>
-                  
+                    </div>
             </div>
-            <div class="col-12 col-md-6">
-                <div><b> {{__('Título:')}}</b> {{($ad->title)}}</div>
-                <div><b> {{__('Precio:')}}</b> {{$ad->price}}</div>
-                <div><b> {{__('Descripción:')}}</b> {{$ad->body}}</div>
-                <div><b> {{__('Publicado el:')}}</b> {{$ad->created_at->format('d/m/Y')}}</div>
-                <div><b> {{__('Por:')}}</b> {{$ad->user->name}}</div>
-                <div><a href="{{route('category.ads', $ad->category)}}">#{{$ad->category->name}}</a></div>
-                <div><a href="#" class="btn btn-dark">{{__('Comprar')}}</a></div>
+            <div class="container-fluid">
+                <div class="col-12 col-md-6 w-100">
+                    <h1> {{($ad->title)}}</h1>
+                    <h2> {{$ad->price}} €</h2>
+                    <div>
+                        <h4>{{__('Descripción:')}}</h4> 
+                        <p>{{$ad->body}}</p>
+                    <div class="mb-1"><b> {{__('Publicado el:')}}</b> {{$ad->created_at->format('d/m/Y')}}</div>
+                    <div class="mb-1"><b> {{__('Por:')}}</b> {{$ad->user->name}}</div>
+                    <div class="mb-1"><a class="category-tag" href="{{route('category.ads', $ad->category)}}">#{{$ad->category->name}}</a></div>
+                    <div><a href="#" class="btn btn-dark">{{__('Comprar')}}</a></div>
+                </div>
             </div>
         </div>
     </div>
+        </div>
 </x-layout>

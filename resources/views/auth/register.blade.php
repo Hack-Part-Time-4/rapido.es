@@ -1,7 +1,7 @@
 <x-layout>
 <x-slot name="title">{{__('Affiliate - Registro')}}</x-slot>
 <!-- ===== REGISTER ===== -->
-<div class="container-fluid register-view bg-accent vh-100">
+<div class="container-fluid register-view bg-accent">
     <div class="row mb-5">
         <div class="col-12 col-md-8 createWidth">
             <div class="d-flex flex-column align-items-center">

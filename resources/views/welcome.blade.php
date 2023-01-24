@@ -11,13 +11,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://thumbs.dreamstime.com/b/dise%C3%B1o-de-plantillas-banner-s%C3%BAper-venta-para-promociones-medios-y-promoci%C3%B3n-sociales-fondo-183029584.jpg" class="w-100 image-modify" alt="...">
+      <img src="{{asset ('/images/coches.png')}}" class="w-100 image-modify" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://cursosgratuitos.grupoeuroformac.com/2065/comm031po-marketing-online-diseno-promocion-sitios-web-comercio.jpg" class="w-100 image-modify" alt="...">
+      <img src="{{asset ('/images/sales.png')}}" class="w-100 image-modify" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://thumbs.dreamstime.com/b/vector-del-icono-de-la-promoci%C3%B3n-colecci%C3%B3n-negocio-l-nea-fina-ejemplo-esquema-promoci-n-s-mbolo-linear-para-el-uso-en-web-y-los-142612305.jpg" class="w-100 image-modify" alt="...">
+      <img src="{{asset ('/images/televisores.jpg')}}" class="w-100 image-modify" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

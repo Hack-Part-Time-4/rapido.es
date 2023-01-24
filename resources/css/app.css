@@ -15,6 +15,10 @@ body{
     width: 68%;
 }
 
+.cardsVerMas{
+    width: auto;
+}
+
 .bg-navbar {
     background-color: transparent;
     top:0px;
@@ -31,8 +35,9 @@ body{
 }
 
 .image-modify {
-    height: 200px;
+    height: 300px;
 }
+
 
 .carousel{
     width: 80%;

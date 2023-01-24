@@ -1,8 +1,8 @@
 <x-layout>
-    <div class="container me-5  ">
-        <div class="row my-5 d-flex justify-content-center">
+    <div class="container-fluid">
+        <div class="my-3 d-flex justify-content-center">
             <div class="col-12 col-md-6 form-control loginSide cardsVerMas text-center">
-                <div id="adImages" class="carousel slide" date-bs-ride="true">
+                <div id="adImages" class="carousel slide d-flex justify-content-center image-card w-100" date-bs-ride="true">
                     <div class="carousel-indicators">
                         @for($i=0; $i<$ad->images()->count(); $i++)
                         <button type="button" data-bs-target="#adImages" data-bs-slide-to="{{$i}}" 

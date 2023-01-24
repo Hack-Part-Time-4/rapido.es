@@ -16,7 +16,12 @@ body{
 }
 
 .cardsVerMas{
-    width: auto;
+    width: 70%;
+}
+
+.image-card {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .bg-navbar {

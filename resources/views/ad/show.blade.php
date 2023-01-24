@@ -1,8 +1,8 @@
 <x-layout>
-    <div class="container me-5  ">
-        <div class="row my-5 d-flex justify-content-center">
+    <div class="container-fluid pe-0 ps-0">
+        <div class="mt-3 mb-5 d-flex justify-content-center">
             <div class="col-12 col-md-6 form-control loginSide cardsVerMas text-center">
-                <div id="adImages" class="carousel slide" date-bs-ride="true">
+                <div id="adImages" class="carousel slide d-flex justify-content-center image-card w-100" date-bs-ride="true">
                     <div class="carousel-indicators">
                         @for($i=0; $i<$ad->images()->count(); $i++)
                         <button type="button" data-bs-target="#adImages" data-bs-slide-to="{{$i}}" 
@@ -14,7 +14,7 @@
                     <div class="carousel-inner">
                         @foreach($ad->images as $image)
                         <div class="carousel-item @if($loop->first) active @endif">
-                            <img src="{{$image->getUrl(400,300)}}" class="d-block w-100 text-white" alt="First slide">
+                            <img src="{{$image->getUrl(400,300)}}" class="d-block w-100 text-white mt-3" alt="First slide">
                         </div>
                         @endforeach
 
@@ -57,7 +57,7 @@
                     <div class="mb-1 text-white"><b> {{__('Publicado el:')}}</b> {{$ad->created_at->format('d/m/Y')}}</div>
                     <div class="mb-1 text-white"><b> {{__('Por:')}}</b> {{$ad->user->name}}</div>
                     <div class="mb-1 text-white"><a class="category-tag" href="{{route('category.ads', $ad->category)}}">#{{$ad->category->name}}</a></div>
-                    <div><a href="#" class="btn btn-danger">{{__('Comprar')}}</a></div>
+                    <div><a href="#" class="btn btn-danger mb-3">{{__('Comprar')}}</a></div>
                 </div>
             </div>
         </div>

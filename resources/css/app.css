@@ -16,7 +16,12 @@ body{
 }
 
 .cardsVerMas{
-    width: auto;
+    width: 70%;
+}
+
+.image-card {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .bg-navbar {
@@ -45,6 +50,10 @@ body{
 
 .letra{
     font-family: 'Montserrat', sans-serif;
+}
+
+.delete {
+    position: absolute;
 }
 
 .category {

@@ -1,11 +1,11 @@
 <x-layout>
 <x-slot name="title">{{__('Affiliate - Registro')}}</x-slot>
 <!-- ===== REGISTER ===== -->
-<div class="container-fluid register-view bg-accent">
+<div class="container-fluid register-view bg-accent vh-100">
     <div class="row mb-5">
         <div class="col-12 col-md-8 createWidth">
             <div class="d-flex flex-column align-items-center">
-            <div class="form-content justify-content-center mb-5 pb-5">
+            <div class="form-content justify-content-center">
                 <!-- FORM TITLE -->
                 <div class="section-title mt-5 d-flex justify-content-center">
                     <h2 class="form-title">{{__('Crea tu cuenta')}}

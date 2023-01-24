@@ -53,7 +53,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="text-dark d-flex justify-content-center" aria-labelledby="navbarDropdown">
+            <div class="col-12 text-dark d-flex justify-content-center" aria-labelledby="navbarDropdown">
             <!-- @foreach ($categories as $category)
               <li><a class="me-5" href="{{route('category.ads',$category)}}">{{__($category->name)}}</a></li>  
             @endforeach -->

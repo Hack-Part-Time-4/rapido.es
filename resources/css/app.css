@@ -52,6 +52,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.delete {
+    position: absolute;
+}
+
 .category {
     margin-left: 3rem;
     margin-right: 3rem;
